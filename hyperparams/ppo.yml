@@ -1,4 +1,4 @@
-HumanoidBulletEnv-v0:
+Walker2d-v2:
   normalize: true
   n_envs: 8
   n_timesteps: !!float 2e6
