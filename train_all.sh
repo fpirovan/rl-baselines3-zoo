@@ -15,5 +15,5 @@ for env_xml in "$environments_dir"/*.xml; do
 done
 
 for env_id in $env_ids; do
-  python train.py --seed 1085 --env_id "$env_id"
+  python train.py --seed 1085 --env "$env_id"
 done
