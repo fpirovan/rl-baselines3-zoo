@@ -1,0 +1,14 @@
+{
+  "0": {
+    "type": "thigh",
+    "which": null
+  },
+  "1": {
+    "type": "leg",
+    "which": null
+  },
+  "2": {
+    "type": "foot",
+    "which": null
+  }
+}

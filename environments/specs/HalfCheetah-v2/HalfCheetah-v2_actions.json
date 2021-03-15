@@ -1,0 +1,26 @@
+{
+  "0": {
+    "type": "thigh",
+    "which": "back"
+  },
+  "1": {
+    "type": "shin",
+    "which": "back"
+  },
+  "2": {
+    "type": "foot",
+    "which": "back"
+  },
+  "3": {
+    "type": "thigh",
+    "which": "front"
+  },
+  "4": {
+    "type": "shin",
+    "which": "front"
+  },
+  "5": {
+    "type": "foot",
+    "which": "front"
+  }
+}

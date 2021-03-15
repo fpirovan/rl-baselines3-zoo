@@ -1,0 +1,60 @@
+{
+  "coords": [
+    {
+      "type": "torso",
+      "which": null,
+      "x": 0.203,
+      "y": 0.659,
+      "quadrant-x": 2,
+      "quadrant-y": 3
+    },
+    {
+      "type": "thigh",
+      "which": "right",
+      "x": 0.213,
+      "y": 0.367,
+      "quadrant-x": 2,
+      "quadrant-y": 2
+    },
+    {
+      "type": "leg",
+      "which": "right",
+      "x": 0.205,
+      "y": -0.276,
+      "quadrant-x": 3,
+      "quadrant-y": 1
+    },
+    {
+      "type": "foot",
+      "which": "right",
+      "x": 0.205,
+      "y": -0.848,
+      "quadrant-x": 4,
+      "quadrant-y": 0
+    },
+    {
+      "type": "thigh",
+      "which": "left",
+      "x": 0.207,
+      "y": 0.371,
+      "quadrant-x": 2,
+      "quadrant-y": 2
+    },
+    {
+      "type": "leg",
+      "which": "left",
+      "x": -0.129,
+      "y": -0.175,
+      "quadrant-x": 1,
+      "quadrant-y": 1
+    },
+    {
+      "type": "foot",
+      "which": "left",
+      "x": -0.431,
+      "y": -0.673,
+      "quadrant-x": 0,
+      "quadrant-y": 0
+    }
+  ]
+}

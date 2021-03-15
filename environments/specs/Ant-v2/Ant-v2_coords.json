@@ -1,0 +1,76 @@
+{
+  "coords": [
+    {
+      "type": "torso",
+      "which": null,
+      "x": -0.008,
+      "y": 0.009,
+      "quadrant-x": 2,
+      "quadrant-y": 2
+    },
+    {
+      "type": "hip",
+      "which": "upper-right",
+      "x": 0.182,
+      "y": 0.213,
+      "quadrant-x": 3,
+      "quadrant-y": 3
+    },
+    {
+      "type": "ankle",
+      "which": "upper-right",
+      "x": 0.496,
+      "y": 0.508,
+      "quadrant-x": 4,
+      "quadrant-y": 4
+    },
+    {
+      "type": "hip",
+      "which": "upper-left",
+      "x": -0.204,
+      "y": 0.211,
+      "quadrant-x": 1,
+      "quadrant-y": 3
+    },
+    {
+      "type": "ankle",
+      "which": "upper-left",
+      "x": -0.514,
+      "y": 0.514,
+      "quadrant-x": 0,
+      "quadrant-y": 4
+    },
+    {
+      "type": "hip",
+      "which": "lower-left",
+      "x": -0.206,
+      "y": -0.194,
+      "quadrant-x": 1,
+      "quadrant-y": 1
+    },
+    {
+      "type": "ankle",
+      "which": "lower-left",
+      "x": -0.499,
+      "y": -0.491,
+      "quadrant-x": 0,
+      "quadrant-y": 0
+    },
+    {
+      "type": "hip",
+      "which": "lower-right",
+      "x": 0.192,
+      "y": -0.199,
+      "quadrant-x": 3,
+      "quadrant-y": 1
+    },
+    {
+      "type": "ankle",
+      "which": "lower-right",
+      "x": 0.496,
+      "y": -0.506,
+      "quadrant-x": 4,
+      "quadrant-y": 0
+    }
+  ]
+}

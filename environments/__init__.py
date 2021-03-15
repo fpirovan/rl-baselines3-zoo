@@ -1,0 +1,1 @@
+from environments.register import register_all_envs

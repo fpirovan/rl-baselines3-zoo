@@ -1,0 +1,82 @@
+{
+  "0": {
+    "type": "torso",
+    "vel": false
+  },
+  "1": {
+    "type": "torso",
+    "vel": false
+  },
+  "2": {
+    "type": "thigh",
+    "which": "back",
+    "vel": false
+  },
+  "3": {
+    "type": "shin",
+    "which": "back",
+    "vel": false
+  },
+  "4": {
+    "type": "foot",
+    "which": "back",
+    "vel": false
+  },
+  "5": {
+    "type": "thigh",
+    "which": "front",
+    "vel": false
+  },
+  "6": {
+    "type": "shin",
+    "which": "front",
+    "vel": false
+  },
+  "7": {
+    "type": "foot",
+    "which": "front",
+    "vel": false
+  },
+  "8": {
+    "type": "torso",
+    "vel": true
+  },
+  "9": {
+    "type": "torso",
+    "vel": true
+  },
+  "10": {
+    "type": "torso",
+    "vel": true
+  },
+  "11": {
+    "type": "thigh",
+    "which": "back",
+    "vel": true
+  },
+  "12": {
+    "type": "shin",
+    "which": "back",
+    "vel": true
+  },
+  "13": {
+    "type": "foot",
+    "which": "back",
+    "vel": true
+  },
+  "14": {
+    "type": "thigh",
+    "which": "front",
+    "vel": true
+  },
+  "15": {
+    "type": "shin",
+    "which": "front",
+    "vel": true
+  },
+  "16": {
+    "type": "foot",
+    "which": "front",
+    "vel": true
+  }
+}

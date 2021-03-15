@@ -12,15 +12,17 @@ from stable_baselines3.common.utils import set_random_seed
 
 # Register custom envs
 import utils.import_envs  # noqa: F401 pytype: disable=import-error
+from environments import register_all_envs
 from utils.exp_manager import ExperimentManager
 from utils.utils import ALGOS, StoreDict
 
+register_all_envs()
 seaborn.set()
 
 if __name__ == "__main__":  # noqa: C901
     parser = argparse.ArgumentParser()
     parser.add_argument("--algo", help="RL Algorithm", default="ppo", type=str, required=False, choices=list(ALGOS.keys()))
-    parser.add_argument("--env", type=str, default="CartPole-v1", help="environment ID")
+    parser.add_argument("--env", type=str, default="Walker2d-v2", help="environment ID")
     parser.add_argument("-tb", "--tensorboard-log", help="Tensorboard log dir", default="", type=str)
     parser.add_argument("-i", "--trained-agent", help="Path to a pretrained agent to continue training", default="", type=str)
     parser.add_argument(
@@ -34,7 +36,7 @@ if __name__ == "__main__":  # noqa: C901
     parser.add_argument("--num-threads", help="Number of threads for PyTorch (-1 to use default)", default=-1, type=int)
     parser.add_argument("--log-interval", help="Override log interval (default: -1, no change)", default=-1, type=int)
     parser.add_argument(
-        "--eval-freq", help="Evaluate the agent every n steps (if negative, no evaluation)", default=10000, type=int
+        "--eval-freq", help="Evaluate the agent every n steps (if negative, no evaluation)", default=-1, type=int
     )
     parser.add_argument("--eval-episodes", help="Number of episodes to use for evaluation", default=5, type=int)
     parser.add_argument("--save-freq", help="Save the model every n steps (if negative, no checkpoint)", default=-1, type=int)
