@@ -10,9 +10,12 @@ from stable_baselines3.common.utils import set_random_seed
 from stable_baselines3.common.vec_env import DummyVecEnv, VecEnv, VecEnvWrapper
 
 import utils.import_envs  # noqa: F401 pylint: disable=unused-import
+from environments import register_all_envs
 from utils import ALGOS, create_test_env, get_latest_run_id, get_saved_hyperparams
 from utils.exp_manager import ExperimentManager
 from utils.utils import StoreDict
+
+register_all_envs()
 
 
 def main():  # noqa: C901
