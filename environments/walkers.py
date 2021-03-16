@@ -14,10 +14,10 @@ class WalkersHalfHumanoidEnv(mujoco_env.MujocoEnv, utils.EzPickle):
         mujoco_env.MujocoEnv.__init__(self, xml_path, 4)
         utils.EzPickle.__init__(self)
 
-    def _step(self, a):
-        posbefore = self.model.data.qpos[0, 0]
+    def step(self, a):
+        posbefore = self.sim.data.qpos[0]
         self.do_simulation(a, self.frame_skip)
-        posafter, height, ang = self.model.data.qpos[0:3, 0]
+        posafter, height, ang = self.sim.data.qpos[0:3]
         alive_bonus = 1.0
         reward = ((posafter - posbefore) / self.dt)
         reward += alive_bonus
@@ -30,8 +30,8 @@ class WalkersHalfHumanoidEnv(mujoco_env.MujocoEnv, utils.EzPickle):
         return ob, reward, done, {}
 
     def _get_obs(self):
-        qpos = self.model.data.qpos
-        qvel = self.model.data.qvel
+        qpos = self.sim.data.qpos
+        qvel = self.sim.data.qvel
         return np.concatenate([qpos[1:], np.clip(qvel, -10, 10)]).ravel()
 
     def reset_model(self):
@@ -55,10 +55,10 @@ class WalkersOstrichEnv(mujoco_env.MujocoEnv, utils.EzPickle):
         mujoco_env.MujocoEnv.__init__(self, xml_path, 4)
         utils.EzPickle.__init__(self)
 
-    def _step(self, a):
-        posbefore = self.model.data.qpos[0, 0]
+    def step(self, a):
+        posbefore = self.sim.data.qpos[0]
         self.do_simulation(a, self.frame_skip)
-        posafter, height, ang = self.model.data.qpos[0:3, 0]
+        posafter, height, ang = self.sim.data.qpos[0:3]
         alive_bonus = 1.0
         reward = ((posafter - posbefore) / self.dt)
         reward += alive_bonus
@@ -66,14 +66,14 @@ class WalkersOstrichEnv(mujoco_env.MujocoEnv, utils.EzPickle):
         done = not (
                 0.8 < height < 2.0 and
                 -1.0 < ang < 1.0 and
-                self.model.data.site_xpos[0, 2] > 1.1
+                self.sim.data.site_xpos[0, 2] > 1.1
         )
         ob = self._get_obs()
         return ob, reward, done, {}
 
     def _get_obs(self):
-        qpos = self.model.data.qpos
-        qvel = self.model.data.qvel
+        qpos = self.sim.data.qpos
+        qvel = self.sim.data.qvel
         return np.concatenate([qpos[1:], np.clip(qvel, -10, 10)]).ravel()
 
     def reset_model(self):
@@ -97,10 +97,10 @@ class WalkersHopperEnv(mujoco_env.MujocoEnv, utils.EzPickle):
         mujoco_env.MujocoEnv.__init__(self, xml_path, 4)
         utils.EzPickle.__init__(self)
 
-    def _step(self, a):
-        posbefore = self.model.data.qpos[0, 0]
+    def step(self, a):
+        posbefore = self.sim.data.qpos[0]
         self.do_simulation(a, self.frame_skip)
-        posafter, height, ang = self.model.data.qpos[0:3, 0]
+        posafter, height, ang = self.sim.data.qpos[0:3]
         alive_bonus = 1.0
         reward = (posafter - posbefore) / self.dt
         reward += alive_bonus
@@ -115,8 +115,8 @@ class WalkersHopperEnv(mujoco_env.MujocoEnv, utils.EzPickle):
 
     def _get_obs(self):
         return np.concatenate([
-            self.model.data.qpos.flat[1:],
-            np.clip(self.model.data.qvel.flat, -10, 10)
+            self.sim.data.qpos.flat[1:],
+            np.clip(self.sim.data.qvel.flat, -10, 10)
         ])
 
     def reset_model(self):
@@ -139,10 +139,10 @@ class WalkersHalfCheetahEnv(mujoco_env.MujocoEnv, utils.EzPickle):
         mujoco_env.MujocoEnv.__init__(self, xml_path, 4)
         utils.EzPickle.__init__(self)
 
-    def _step(self, action):
-        xposbefore = self.model.data.qpos[0, 0]
+    def step(self, action):
+        xposbefore = self.sim.data.qpos[0]
         self.do_simulation(action, self.frame_skip)
-        xposafter = self.model.data.qpos[0, 0]
+        xposafter = self.sim.data.qpos[0]
         ob = self._get_obs()
         reward_ctrl = - 0.1 * np.square(action).sum()
         reward_run = (xposafter - xposbefore) / self.dt
@@ -152,16 +152,16 @@ class WalkersHalfCheetahEnv(mujoco_env.MujocoEnv, utils.EzPickle):
         s = self.state_vector()
         done = not (
                 np.isfinite(s).all() and (np.abs(s[2:]) < 100).all() and
-                self.model.data.site_xpos[2, 2] > 1.2 and
-                self.model.data.site_xpos[0, 2] > 0.7 and
-                self.model.data.site_xpos[1, 2] > 0.7
+                self.sim.data.site_xpos[2, 2] > 1.2 and
+                self.sim.data.site_xpos[0, 2] > 0.7 and
+                self.sim.data.site_xpos[1, 2] > 0.7
         )
         return ob, reward, done, dict(reward_run=reward_run, reward_ctrl=reward_ctrl)
 
     def _get_obs(self):
         return np.concatenate([
-            self.model.data.qpos.flat[1:],
-            np.clip(self.model.data.qvel.flat, -10, 10)
+            self.sim.data.qpos.flat[1:],
+            np.clip(self.sim.data.qvel.flat, -10, 10)
         ])
 
     def reset_model(self):
@@ -181,10 +181,10 @@ class WalkersFullCheetahEnv(mujoco_env.MujocoEnv, utils.EzPickle):
         mujoco_env.MujocoEnv.__init__(self, xml_path, 4)
         utils.EzPickle.__init__(self)
 
-    def _step(self, action):
-        xposbefore = self.model.data.qpos[0, 0]
+    def step(self, action):
+        xposbefore = self.sim.data.qpos[0]
         self.do_simulation(action, self.frame_skip)
-        xposafter = self.model.data.qpos[0, 0]
+        xposafter = self.sim.data.qpos[0]
         ob = self._get_obs()
         reward_ctrl = - 0.1 * np.square(action).sum()
         reward_run = (xposafter - xposbefore) / self.dt
@@ -193,15 +193,15 @@ class WalkersFullCheetahEnv(mujoco_env.MujocoEnv, utils.EzPickle):
         reward += alive_bonus
         s = self.state_vector()
         done = not (np.isfinite(s).all() and (np.abs(s[2:]) < 100).all() and
-                    self.model.data.site_xpos[0, 2] > 0.7 and
-                    self.model.data.site_xpos[1, 2] > 0.7
+                    self.sim.data.site_xpos[0, 2] > 0.7 and
+                    self.sim.data.site_xpos[1, 2] > 0.7
                     )
         return ob, reward, done, dict(reward_run=reward_run, reward_ctrl=reward_ctrl)
 
     def _get_obs(self):
         return np.concatenate([
-            self.model.data.qpos.flat[1:],
-            np.clip(self.model.data.qvel.flat, -10, 10)
+            self.sim.data.qpos.flat[1:],
+            np.clip(self.sim.data.qvel.flat, -10, 10)
         ])
 
     def reset_model(self):
@@ -221,24 +221,24 @@ class WalkersKangarooEnv(mujoco_env.MujocoEnv, utils.EzPickle):
         mujoco_env.MujocoEnv.__init__(self, xml_path, 4)
         utils.EzPickle.__init__(self)
 
-    def _step(self, a):
-        posbefore = self.model.data.qpos[0, 0]
+    def step(self, a):
+        posbefore = self.sim.data.qpos[0]
         self.do_simulation(a, self.frame_skip)
-        posafter, height, ang = self.model.data.qpos[0:3, 0]
+        posafter, height, ang = self.sim.data.qpos[0:3]
         alive_bonus = 1.0
         reward = ((posafter - posbefore) / self.dt) / 2.0
         reward += alive_bonus
         reward -= 1e-3 * np.square(a).sum()
         done = not (
                 0.8 < height < 2.0 and -1.0 < ang < 1.0 and
-                0.8 < self.model.data.site_xpos[0, 2] < 1.6
+                0.8 < self.sim.data.site_xpos[0, 2] < 1.6
         )
         ob = self._get_obs()
         return ob, reward, done, {}
 
     def _get_obs(self):
-        qpos = self.model.data.qpos
-        qvel = self.model.data.qvel
+        qpos = self.sim.data.qpos
+        qvel = self.sim.data.qvel
         return np.concatenate([qpos[1:], np.clip(qvel, -10, 10)]).ravel()
 
     def reset_model(self):

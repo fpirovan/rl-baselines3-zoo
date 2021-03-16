@@ -23,10 +23,10 @@ class SnakeEnv(mujoco_env.MujocoEnv, utils.EzPickle):
     def get_env_num_str(number):
         return num2words.num2words(number).capitalize()
 
-    def _step(self, a):
-        xposbefore = self.model.data.site_xpos[0][self._direction]
+    def step(self, a):
+        xposbefore = self.sim.data.site_xpos[0][self._direction]
         self.do_simulation(a, self.frame_skip)
-        xposafter = self.model.data.site_xpos[0][self._direction]
+        xposafter = self.sim.data.site_xpos[0][self._direction]
         reward_fwd = (xposafter - xposbefore) / self.dt
         reward_ctrl = - self.ctrl_cost_coeff * np.square(a).sum()
         reward = reward_fwd + reward_ctrl
@@ -34,8 +34,8 @@ class SnakeEnv(mujoco_env.MujocoEnv, utils.EzPickle):
         return ob, reward, False, dict(reward_fwd=reward_fwd, reward_ctrl=reward_ctrl)
 
     def _get_obs(self):
-        qpos = self.model.data.qpos
-        qvel = self.model.data.qvel
+        qpos = self.sim.data.qpos
+        qvel = self.sim.data.qvel
         return np.concatenate([qpos.flat[2:], qvel.flat])
 
     def reset_model(self):
