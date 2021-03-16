@@ -1,7 +1,7 @@
 Ant-v2:
   normalize: true
   n_envs: 8
-  n_timesteps: !!float 2e6
+  n_timesteps: !!float 4e6
   policy: 'MlpPolicy'
   n_steps: 2048
   batch_size: 64
@@ -15,7 +15,7 @@ Ant-v2:
 HalfCheetah-v2:
   normalize: true
   n_envs: 8
-  n_timesteps: !!float 2e6
+  n_timesteps: !!float 4e6
   policy: 'MlpPolicy'
   n_steps: 2048
   batch_size: 64
@@ -29,7 +29,7 @@ HalfCheetah-v2:
 Hopper-v2:
   normalize: true
   n_envs: 8
-  n_timesteps: !!float 2e6
+  n_timesteps: !!float 4e6
   policy: 'MlpPolicy'
   n_steps: 2048
   batch_size: 64
@@ -57,7 +57,7 @@ Humanoid-v2:
 Walker2d-v2:
   normalize: true
   n_envs: 8
-  n_timesteps: !!float 2e6
+  n_timesteps: !!float 4e6
   policy: 'MlpPolicy'
   n_steps: 2048
   batch_size: 64
@@ -71,7 +71,7 @@ Walker2d-v2:
 CentipedeEight-v1:
   normalize: true
   n_envs: 8
-  n_timesteps: !!float 2e6
+  n_timesteps: !!float 4e6
   policy: 'MlpPolicy'
   n_steps: 2048
   batch_size: 64
@@ -85,7 +85,7 @@ CentipedeEight-v1:
 CentipedeFifty-v1:
   normalize: true
   n_envs: 8
-  n_timesteps: !!float 2e6
+  n_timesteps: !!float 4e6
   policy: 'MlpPolicy'
   n_steps: 2048
   batch_size: 64
@@ -99,7 +99,7 @@ CentipedeFifty-v1:
 CentipedeFive-v1:
   normalize: true
   n_envs: 8
-  n_timesteps: !!float 2e6
+  n_timesteps: !!float 4e6
   policy: 'MlpPolicy'
   n_steps: 2048
   batch_size: 64
@@ -113,7 +113,7 @@ CentipedeFive-v1:
 CentipedeForty-v1:
   normalize: true
   n_envs: 8
-  n_timesteps: !!float 2e6
+  n_timesteps: !!float 4e6
   policy: 'MlpPolicy'
   n_steps: 2048
   batch_size: 64
@@ -127,7 +127,7 @@ CentipedeForty-v1:
 CentipedeFour-v1:
   normalize: true
   n_envs: 8
-  n_timesteps: !!float 2e6
+  n_timesteps: !!float 4e6
   policy: 'MlpPolicy'
   n_steps: 2048
   batch_size: 64
@@ -141,7 +141,7 @@ CentipedeFour-v1:
 CentipedeFourteen-v1:
   normalize: true
   n_envs: 8
-  n_timesteps: !!float 2e6
+  n_timesteps: !!float 4e6
   policy: 'MlpPolicy'
   n_steps: 2048
   batch_size: 64
@@ -155,7 +155,7 @@ CentipedeFourteen-v1:
 CentipedeOnehundred-v1:
   normalize: true
   n_envs: 8
-  n_timesteps: !!float 2e6
+  n_timesteps: !!float 4e6
   policy: 'MlpPolicy'
   n_steps: 2048
   batch_size: 64
@@ -169,7 +169,7 @@ CentipedeOnehundred-v1:
 CentipedeSeven-v1:
   normalize: true
   n_envs: 8
-  n_timesteps: !!float 2e6
+  n_timesteps: !!float 4e6
   policy: 'MlpPolicy'
   n_steps: 2048
   batch_size: 64
@@ -183,7 +183,7 @@ CentipedeSeven-v1:
 CentipedeSix-v1:
   normalize: true
   n_envs: 8
-  n_timesteps: !!float 2e6
+  n_timesteps: !!float 4e6
   policy: 'MlpPolicy'
   n_steps: 2048
   batch_size: 64
@@ -197,7 +197,7 @@ CentipedeSix-v1:
 CentipedeTen-v1:
   normalize: true
   n_envs: 8
-  n_timesteps: !!float 2e6
+  n_timesteps: !!float 4e6
   policy: 'MlpPolicy'
   n_steps: 2048
   batch_size: 64
@@ -211,7 +211,7 @@ CentipedeTen-v1:
 CentipedeThirty-v1:
   normalize: true
   n_envs: 8
-  n_timesteps: !!float 2e6
+  n_timesteps: !!float 4e6
   policy: 'MlpPolicy'
   n_steps: 2048
   batch_size: 64
@@ -225,7 +225,7 @@ CentipedeThirty-v1:
 CentipedeThree-v1:
   normalize: true
   n_envs: 8
-  n_timesteps: !!float 2e6
+  n_timesteps: !!float 4e6
   policy: 'MlpPolicy'
   n_steps: 2048
   batch_size: 64
@@ -239,7 +239,7 @@ CentipedeThree-v1:
 CentipedeTwelve-v1:
   normalize: true
   n_envs: 8
-  n_timesteps: !!float 2e6
+  n_timesteps: !!float 4e6
   policy: 'MlpPolicy'
   n_steps: 2048
   batch_size: 64
@@ -253,7 +253,7 @@ CentipedeTwelve-v1:
 CentipedeTwenty-v1:
   normalize: true
   n_envs: 8
-  n_timesteps: !!float 2e6
+  n_timesteps: !!float 4e6
   policy: 'MlpPolicy'
   n_steps: 2048
   batch_size: 64
@@ -267,7 +267,7 @@ CentipedeTwenty-v1:
 CpCentipedeEight-v1:
   normalize: true
   n_envs: 8
-  n_timesteps: !!float 2e6
+  n_timesteps: !!float 4e6
   policy: 'MlpPolicy'
   n_steps: 2048
   batch_size: 64
@@ -281,7 +281,7 @@ CpCentipedeEight-v1:
 CpCentipedeFour-v1:
   normalize: true
   n_envs: 8
-  n_timesteps: !!float 2e6
+  n_timesteps: !!float 4e6
   policy: 'MlpPolicy'
   n_steps: 2048
   batch_size: 64
@@ -295,7 +295,7 @@ CpCentipedeFour-v1:
 CpCentipedeFourteen-v1:
   normalize: true
   n_envs: 8
-  n_timesteps: !!float 2e6
+  n_timesteps: !!float 4e6
   policy: 'MlpPolicy'
   n_steps: 2048
   batch_size: 64
@@ -309,7 +309,7 @@ CpCentipedeFourteen-v1:
 CpCentipedeSix-v1:
   normalize: true
   n_envs: 8
-  n_timesteps: !!float 2e6
+  n_timesteps: !!float 4e6
   policy: 'MlpPolicy'
   n_steps: 2048
   batch_size: 64
@@ -323,7 +323,7 @@ CpCentipedeSix-v1:
 CpCentipedeTen-v1:
   normalize: true
   n_envs: 8
-  n_timesteps: !!float 2e6
+  n_timesteps: !!float 4e6
   policy: 'MlpPolicy'
   n_steps: 2048
   batch_size: 64
@@ -337,7 +337,7 @@ CpCentipedeTen-v1:
 CpCentipedeTwelve-v1:
   normalize: true
   n_envs: 8
-  n_timesteps: !!float 2e6
+  n_timesteps: !!float 4e6
   policy: 'MlpPolicy'
   n_steps: 2048
   batch_size: 64
@@ -351,7 +351,7 @@ CpCentipedeTwelve-v1:
 SnakeEight-v1:
   normalize: true
   n_envs: 8
-  n_timesteps: !!float 2e6
+  n_timesteps: !!float 4e6
   policy: 'MlpPolicy'
   n_steps: 2048
   batch_size: 64
@@ -365,7 +365,7 @@ SnakeEight-v1:
 SnakeFive-v1:
   normalize: true
   n_envs: 8
-  n_timesteps: !!float 2e6
+  n_timesteps: !!float 4e6
   policy: 'MlpPolicy'
   n_steps: 2048
   batch_size: 64
@@ -379,7 +379,7 @@ SnakeFive-v1:
 SnakeForty-v1:
   normalize: true
   n_envs: 8
-  n_timesteps: !!float 2e6
+  n_timesteps: !!float 4e6
   policy: 'MlpPolicy'
   n_steps: 2048
   batch_size: 64
@@ -393,7 +393,7 @@ SnakeForty-v1:
 SnakeFour-v1:
   normalize: true
   n_envs: 8
-  n_timesteps: !!float 2e6
+  n_timesteps: !!float 4e6
   policy: 'MlpPolicy'
   n_steps: 2048
   batch_size: 64
@@ -407,7 +407,7 @@ SnakeFour-v1:
 SnakeNine-v1:
   normalize: true
   n_envs: 8
-  n_timesteps: !!float 2e6
+  n_timesteps: !!float 4e6
   policy: 'MlpPolicy'
   n_steps: 2048
   batch_size: 64
@@ -421,7 +421,7 @@ SnakeNine-v1:
 SnakeSeven-v1:
   normalize: true
   n_envs: 8
-  n_timesteps: !!float 2e6
+  n_timesteps: !!float 4e6
   policy: 'MlpPolicy'
   n_steps: 2048
   batch_size: 64
@@ -435,7 +435,7 @@ SnakeSeven-v1:
 SnakeSix-v1:
   normalize: true
   n_envs: 8
-  n_timesteps: !!float 2e6
+  n_timesteps: !!float 4e6
   policy: 'MlpPolicy'
   n_steps: 2048
   batch_size: 64
@@ -449,7 +449,7 @@ SnakeSix-v1:
 SnakeTen-v1:
   normalize: true
   n_envs: 8
-  n_timesteps: !!float 2e6
+  n_timesteps: !!float 4e6
   policy: 'MlpPolicy'
   n_steps: 2048
   batch_size: 64
@@ -463,7 +463,7 @@ SnakeTen-v1:
 SnakeThree-v1:
   normalize: true
   n_envs: 8
-  n_timesteps: !!float 2e6
+  n_timesteps: !!float 4e6
   policy: 'MlpPolicy'
   n_steps: 2048
   batch_size: 64
@@ -477,7 +477,7 @@ SnakeThree-v1:
 SnakeTwenty-v1:
   normalize: true
   n_envs: 8
-  n_timesteps: !!float 2e6
+  n_timesteps: !!float 4e6
   policy: 'MlpPolicy'
   n_steps: 2048
   batch_size: 64
@@ -491,7 +491,7 @@ SnakeTwenty-v1:
 WalkersFullCheetah-v1:
   normalize: true
   n_envs: 8
-  n_timesteps: !!float 2e6
+  n_timesteps: !!float 4e6
   policy: 'MlpPolicy'
   n_steps: 2048
   batch_size: 64
@@ -505,7 +505,7 @@ WalkersFullCheetah-v1:
 WalkersHalfCheetah-v1:
   normalize: true
   n_envs: 8
-  n_timesteps: !!float 2e6
+  n_timesteps: !!float 4e6
   policy: 'MlpPolicy'
   n_steps: 2048
   batch_size: 64
@@ -519,7 +519,7 @@ WalkersHalfCheetah-v1:
 WalkersHalfHumanoid-v1:
   normalize: true
   n_envs: 8
-  n_timesteps: !!float 2e6
+  n_timesteps: !!float 4e6
   policy: 'MlpPolicy'
   n_steps: 2048
   batch_size: 64
@@ -533,7 +533,7 @@ WalkersHalfHumanoid-v1:
 WalkersHopper-v1:
   normalize: true
   n_envs: 8
-  n_timesteps: !!float 2e6
+  n_timesteps: !!float 4e6
   policy: 'MlpPolicy'
   n_steps: 2048
   batch_size: 64
@@ -547,7 +547,7 @@ WalkersHopper-v1:
 WalkersKangaroo-v1:
   normalize: true
   n_envs: 8
-  n_timesteps: !!float 2e6
+  n_timesteps: !!float 4e6
   policy: 'MlpPolicy'
   n_steps: 2048
   batch_size: 64
@@ -561,7 +561,7 @@ WalkersKangaroo-v1:
 WalkersOstrich-v1:
   normalize: true
   n_envs: 8
-  n_timesteps: !!float 2e6
+  n_timesteps: !!float 4e6
   policy: 'MlpPolicy'
   n_steps: 2048
   batch_size: 64
