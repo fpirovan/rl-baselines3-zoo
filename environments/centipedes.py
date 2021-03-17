@@ -122,11 +122,6 @@ class CpCentipedeTwelveEnv(CentipedeEnv):
         CentipedeEnv.__init__(self, num_legs=12, is_crippled=True)
 
 
-class CpCentipedeFourteenEnv(CentipedeEnv):
-    def __init__(self):
-        CentipedeEnv.__init__(self, num_legs=14, is_crippled=True)
-
-
 class CentipedeFourEnv(CentipedeEnv):
     def __init__(self):
         super(CentipedeFourEnv, self).__init__(num_legs=4)
@@ -150,11 +145,6 @@ class CentipedeTenEnv(CentipedeEnv):
 class CentipedeTwelveEnv(CentipedeEnv):
     def __init__(self):
         CentipedeEnv.__init__(self, num_legs=12)
-
-
-class CentipedeFourteenEnv(CentipedeEnv):
-    def __init__(self):
-        CentipedeEnv.__init__(self, num_legs=14)
 
 
 class CentipedeTwentyEnv(CentipedeEnv):

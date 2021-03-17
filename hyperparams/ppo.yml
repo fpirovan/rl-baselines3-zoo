@@ -1,7 +1,7 @@
 Ant-v2:
   normalize: true
   n_envs: 8
-  n_timesteps: !!float 4e6
+  n_timesteps: !!float 2e6
   policy: 'MlpPolicy'
   n_steps: 2048
   batch_size: 64
@@ -15,7 +15,7 @@ Ant-v2:
 HalfCheetah-v2:
   normalize: true
   n_envs: 8
-  n_timesteps: !!float 4e6
+  n_timesteps: !!float 2e6
   policy: 'MlpPolicy'
   n_steps: 2048
   batch_size: 64
@@ -29,7 +29,7 @@ HalfCheetah-v2:
 Hopper-v2:
   normalize: true
   n_envs: 8
-  n_timesteps: !!float 4e6
+  n_timesteps: !!float 2e6
   policy: 'MlpPolicy'
   n_steps: 2048
   batch_size: 64
@@ -68,24 +68,10 @@ Walker2d-v2:
   learning_rate: 2.5e-4
   clip_range: 0.2
 
-CentipedeEight-v1:
+CentipedeThree-v1:
   normalize: true
   n_envs: 8
-  n_timesteps: !!float 4e6
-  policy: 'MlpPolicy'
-  n_steps: 2048
-  batch_size: 64
-  gae_lambda: 0.95
-  gamma: 0.99
-  n_epochs: 10
-  ent_coef: 0.0
-  learning_rate: 2.5e-4
-  clip_range: 0.2
-
-CentipedeFifty-v1:
-  normalize: true
-  n_envs: 8
-  n_timesteps: !!float 4e6
+  n_timesteps: !!float 2e6
   policy: 'MlpPolicy'
   n_steps: 2048
   batch_size: 64
@@ -99,63 +85,7 @@ CentipedeFifty-v1:
 CentipedeFive-v1:
   normalize: true
   n_envs: 8
-  n_timesteps: !!float 4e6
-  policy: 'MlpPolicy'
-  n_steps: 2048
-  batch_size: 64
-  gae_lambda: 0.95
-  gamma: 0.99
-  n_epochs: 10
-  ent_coef: 0.0
-  learning_rate: 2.5e-4
-  clip_range: 0.2
-
-CentipedeForty-v1:
-  normalize: true
-  n_envs: 8
-  n_timesteps: !!float 4e6
-  policy: 'MlpPolicy'
-  n_steps: 2048
-  batch_size: 64
-  gae_lambda: 0.95
-  gamma: 0.99
-  n_epochs: 10
-  ent_coef: 0.0
-  learning_rate: 2.5e-4
-  clip_range: 0.2
-
-CentipedeFour-v1:
-  normalize: true
-  n_envs: 8
-  n_timesteps: !!float 4e6
-  policy: 'MlpPolicy'
-  n_steps: 2048
-  batch_size: 64
-  gae_lambda: 0.95
-  gamma: 0.99
-  n_epochs: 10
-  ent_coef: 0.0
-  learning_rate: 2.5e-4
-  clip_range: 0.2
-
-CentipedeFourteen-v1:
-  normalize: true
-  n_envs: 8
-  n_timesteps: !!float 4e6
-  policy: 'MlpPolicy'
-  n_steps: 2048
-  batch_size: 64
-  gae_lambda: 0.95
-  gamma: 0.99
-  n_epochs: 10
-  ent_coef: 0.0
-  learning_rate: 2.5e-4
-  clip_range: 0.2
-
-CentipedeOnehundred-v1:
-  normalize: true
-  n_envs: 8
-  n_timesteps: !!float 4e6
+  n_timesteps: !!float 2e6
   policy: 'MlpPolicy'
   n_steps: 2048
   batch_size: 64
@@ -169,7 +99,21 @@ CentipedeOnehundred-v1:
 CentipedeSeven-v1:
   normalize: true
   n_envs: 8
-  n_timesteps: !!float 4e6
+  n_timesteps: !!float 2e6
+  policy: 'MlpPolicy'
+  n_steps: 2048
+  batch_size: 64
+  gae_lambda: 0.95
+  gamma: 0.99
+  n_epochs: 10
+  ent_coef: 0.0
+  learning_rate: 2.5e-4
+  clip_range: 0.2
+
+CentipedeFour-v1:
+  normalize: true
+  n_envs: 8
+  n_timesteps: !!float 2e6
   policy: 'MlpPolicy'
   n_steps: 2048
   batch_size: 64
@@ -183,7 +127,21 @@ CentipedeSeven-v1:
 CentipedeSix-v1:
   normalize: true
   n_envs: 8
-  n_timesteps: !!float 4e6
+  n_timesteps: !!float 2e6
+  policy: 'MlpPolicy'
+  n_steps: 2048
+  batch_size: 64
+  gae_lambda: 0.95
+  gamma: 0.99
+  n_epochs: 10
+  ent_coef: 0.0
+  learning_rate: 2.5e-4
+  clip_range: 0.2
+
+CentipedeEight-v1:
+  normalize: true
+  n_envs: 8
+  n_timesteps: !!float 2e6
   policy: 'MlpPolicy'
   n_steps: 2048
   batch_size: 64
@@ -197,35 +155,7 @@ CentipedeSix-v1:
 CentipedeTen-v1:
   normalize: true
   n_envs: 8
-  n_timesteps: !!float 4e6
-  policy: 'MlpPolicy'
-  n_steps: 2048
-  batch_size: 64
-  gae_lambda: 0.95
-  gamma: 0.99
-  n_epochs: 10
-  ent_coef: 0.0
-  learning_rate: 2.5e-4
-  clip_range: 0.2
-
-CentipedeThirty-v1:
-  normalize: true
-  n_envs: 8
-  n_timesteps: !!float 4e6
-  policy: 'MlpPolicy'
-  n_steps: 2048
-  batch_size: 64
-  gae_lambda: 0.95
-  gamma: 0.99
-  n_epochs: 10
-  ent_coef: 0.0
-  learning_rate: 2.5e-4
-  clip_range: 0.2
-
-CentipedeThree-v1:
-  normalize: true
-  n_envs: 8
-  n_timesteps: !!float 4e6
+  n_timesteps: !!float 2e6
   policy: 'MlpPolicy'
   n_steps: 2048
   batch_size: 64
@@ -239,35 +169,7 @@ CentipedeThree-v1:
 CentipedeTwelve-v1:
   normalize: true
   n_envs: 8
-  n_timesteps: !!float 4e6
-  policy: 'MlpPolicy'
-  n_steps: 2048
-  batch_size: 64
-  gae_lambda: 0.95
-  gamma: 0.99
-  n_epochs: 10
-  ent_coef: 0.0
-  learning_rate: 2.5e-4
-  clip_range: 0.2
-
-CentipedeTwenty-v1:
-  normalize: true
-  n_envs: 8
-  n_timesteps: !!float 4e6
-  policy: 'MlpPolicy'
-  n_steps: 2048
-  batch_size: 64
-  gae_lambda: 0.95
-  gamma: 0.99
-  n_epochs: 10
-  ent_coef: 0.0
-  learning_rate: 2.5e-4
-  clip_range: 0.2
-
-CpCentipedeEight-v1:
-  normalize: true
-  n_envs: 8
-  n_timesteps: !!float 4e6
+  n_timesteps: !!float 2e6
   policy: 'MlpPolicy'
   n_steps: 2048
   batch_size: 64
@@ -279,286 +181,6 @@ CpCentipedeEight-v1:
   clip_range: 0.2
 
 CpCentipedeFour-v1:
-  normalize: true
-  n_envs: 8
-  n_timesteps: !!float 4e6
-  policy: 'MlpPolicy'
-  n_steps: 2048
-  batch_size: 64
-  gae_lambda: 0.95
-  gamma: 0.99
-  n_epochs: 10
-  ent_coef: 0.0
-  learning_rate: 2.5e-4
-  clip_range: 0.2
-
-CpCentipedeFourteen-v1:
-  normalize: true
-  n_envs: 8
-  n_timesteps: !!float 4e6
-  policy: 'MlpPolicy'
-  n_steps: 2048
-  batch_size: 64
-  gae_lambda: 0.95
-  gamma: 0.99
-  n_epochs: 10
-  ent_coef: 0.0
-  learning_rate: 2.5e-4
-  clip_range: 0.2
-
-CpCentipedeSix-v1:
-  normalize: true
-  n_envs: 8
-  n_timesteps: !!float 4e6
-  policy: 'MlpPolicy'
-  n_steps: 2048
-  batch_size: 64
-  gae_lambda: 0.95
-  gamma: 0.99
-  n_epochs: 10
-  ent_coef: 0.0
-  learning_rate: 2.5e-4
-  clip_range: 0.2
-
-CpCentipedeTen-v1:
-  normalize: true
-  n_envs: 8
-  n_timesteps: !!float 4e6
-  policy: 'MlpPolicy'
-  n_steps: 2048
-  batch_size: 64
-  gae_lambda: 0.95
-  gamma: 0.99
-  n_epochs: 10
-  ent_coef: 0.0
-  learning_rate: 2.5e-4
-  clip_range: 0.2
-
-CpCentipedeTwelve-v1:
-  normalize: true
-  n_envs: 8
-  n_timesteps: !!float 4e6
-  policy: 'MlpPolicy'
-  n_steps: 2048
-  batch_size: 64
-  gae_lambda: 0.95
-  gamma: 0.99
-  n_epochs: 10
-  ent_coef: 0.0
-  learning_rate: 2.5e-4
-  clip_range: 0.2
-
-SnakeEight-v1:
-  normalize: true
-  n_envs: 8
-  n_timesteps: !!float 4e6
-  policy: 'MlpPolicy'
-  n_steps: 2048
-  batch_size: 64
-  gae_lambda: 0.95
-  gamma: 0.99
-  n_epochs: 10
-  ent_coef: 0.0
-  learning_rate: 2.5e-4
-  clip_range: 0.2
-
-SnakeFive-v1:
-  normalize: true
-  n_envs: 8
-  n_timesteps: !!float 4e6
-  policy: 'MlpPolicy'
-  n_steps: 2048
-  batch_size: 64
-  gae_lambda: 0.95
-  gamma: 0.99
-  n_epochs: 10
-  ent_coef: 0.0
-  learning_rate: 2.5e-4
-  clip_range: 0.2
-
-SnakeForty-v1:
-  normalize: true
-  n_envs: 8
-  n_timesteps: !!float 4e6
-  policy: 'MlpPolicy'
-  n_steps: 2048
-  batch_size: 64
-  gae_lambda: 0.95
-  gamma: 0.99
-  n_epochs: 10
-  ent_coef: 0.0
-  learning_rate: 2.5e-4
-  clip_range: 0.2
-
-SnakeFour-v1:
-  normalize: true
-  n_envs: 8
-  n_timesteps: !!float 4e6
-  policy: 'MlpPolicy'
-  n_steps: 2048
-  batch_size: 64
-  gae_lambda: 0.95
-  gamma: 0.99
-  n_epochs: 10
-  ent_coef: 0.0
-  learning_rate: 2.5e-4
-  clip_range: 0.2
-
-SnakeNine-v1:
-  normalize: true
-  n_envs: 8
-  n_timesteps: !!float 4e6
-  policy: 'MlpPolicy'
-  n_steps: 2048
-  batch_size: 64
-  gae_lambda: 0.95
-  gamma: 0.99
-  n_epochs: 10
-  ent_coef: 0.0
-  learning_rate: 2.5e-4
-  clip_range: 0.2
-
-SnakeSeven-v1:
-  normalize: true
-  n_envs: 8
-  n_timesteps: !!float 4e6
-  policy: 'MlpPolicy'
-  n_steps: 2048
-  batch_size: 64
-  gae_lambda: 0.95
-  gamma: 0.99
-  n_epochs: 10
-  ent_coef: 0.0
-  learning_rate: 2.5e-4
-  clip_range: 0.2
-
-SnakeSix-v1:
-  normalize: true
-  n_envs: 8
-  n_timesteps: !!float 4e6
-  policy: 'MlpPolicy'
-  n_steps: 2048
-  batch_size: 64
-  gae_lambda: 0.95
-  gamma: 0.99
-  n_epochs: 10
-  ent_coef: 0.0
-  learning_rate: 2.5e-4
-  clip_range: 0.2
-
-SnakeTen-v1:
-  normalize: true
-  n_envs: 8
-  n_timesteps: !!float 4e6
-  policy: 'MlpPolicy'
-  n_steps: 2048
-  batch_size: 64
-  gae_lambda: 0.95
-  gamma: 0.99
-  n_epochs: 10
-  ent_coef: 0.0
-  learning_rate: 2.5e-4
-  clip_range: 0.2
-
-SnakeThree-v1:
-  normalize: true
-  n_envs: 8
-  n_timesteps: !!float 4e6
-  policy: 'MlpPolicy'
-  n_steps: 2048
-  batch_size: 64
-  gae_lambda: 0.95
-  gamma: 0.99
-  n_epochs: 10
-  ent_coef: 0.0
-  learning_rate: 2.5e-4
-  clip_range: 0.2
-
-SnakeTwenty-v1:
-  normalize: true
-  n_envs: 8
-  n_timesteps: !!float 4e6
-  policy: 'MlpPolicy'
-  n_steps: 2048
-  batch_size: 64
-  gae_lambda: 0.95
-  gamma: 0.99
-  n_epochs: 10
-  ent_coef: 0.0
-  learning_rate: 2.5e-4
-  clip_range: 0.2
-
-WalkersFullCheetah-v1:
-  normalize: true
-  n_envs: 8
-  n_timesteps: !!float 4e6
-  policy: 'MlpPolicy'
-  n_steps: 2048
-  batch_size: 64
-  gae_lambda: 0.95
-  gamma: 0.99
-  n_epochs: 10
-  ent_coef: 0.0
-  learning_rate: 2.5e-4
-  clip_range: 0.2
-
-WalkersHalfCheetah-v1:
-  normalize: true
-  n_envs: 8
-  n_timesteps: !!float 4e6
-  policy: 'MlpPolicy'
-  n_steps: 2048
-  batch_size: 64
-  gae_lambda: 0.95
-  gamma: 0.99
-  n_epochs: 10
-  ent_coef: 0.0
-  learning_rate: 2.5e-4
-  clip_range: 0.2
-
-WalkersHalfHumanoid-v1:
-  normalize: true
-  n_envs: 8
-  n_timesteps: !!float 4e6
-  policy: 'MlpPolicy'
-  n_steps: 2048
-  batch_size: 64
-  gae_lambda: 0.95
-  gamma: 0.99
-  n_epochs: 10
-  ent_coef: 0.0
-  learning_rate: 2.5e-4
-  clip_range: 0.2
-
-WalkersHopper-v1:
-  normalize: true
-  n_envs: 8
-  n_timesteps: !!float 4e6
-  policy: 'MlpPolicy'
-  n_steps: 2048
-  batch_size: 64
-  gae_lambda: 0.95
-  gamma: 0.99
-  n_epochs: 10
-  ent_coef: 0.0
-  learning_rate: 2.5e-4
-  clip_range: 0.2
-
-WalkersKangaroo-v1:
-  normalize: true
-  n_envs: 8
-  n_timesteps: !!float 4e6
-  policy: 'MlpPolicy'
-  n_steps: 2048
-  batch_size: 64
-  gae_lambda: 0.95
-  gamma: 0.99
-  n_epochs: 10
-  ent_coef: 0.0
-  learning_rate: 2.5e-4
-  clip_range: 0.2
-
-WalkersOstrich-v1:
   normalize: true
   n_envs: 8
   n_timesteps: !!float 4e6
