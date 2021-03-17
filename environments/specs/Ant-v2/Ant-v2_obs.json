@@ -1,127 +1,100 @@
 {
   "0": {
-    "type": "torso",
-    "vel": false
+    "type": "torso"
   },
   "1": {
-    "type": "torso",
-    "vel": false
+    "type": "torso"
   },
   "2": {
-    "type": "torso",
-    "vel": false
+    "type": "torso"
   },
   "3": {
-    "type": "torso",
-    "vel": false
+    "type": "torso"
   },
   "4": {
-    "type": "torso",
-    "vel": false
+    "type": "torso"
   },
   "5": {
     "type": "hip",
-    "which": "upper-right",
-    "vel": false
+    "which": "upper-right"
   },
   "6": {
     "type": "ankle",
-    "which": "upper-right",
-    "vel": false
+    "which": "upper-right"
   },
   "7": {
     "type": "hip",
-    "which": "upper-left",
-    "vel": false
+    "which": "upper-left"
   },
   "8": {
     "type": "ankle",
-    "which": "upper-left",
-    "vel": false
+    "which": "upper-left"
   },
   "9": {
     "type": "hip",
-    "which": "lower-left",
-    "vel": false
+    "which": "lower-left"
   },
   "10": {
     "type": "ankle",
-    "which": "lower-left",
-    "vel": false
+    "which": "lower-left"
   },
   "11": {
     "type": "hip",
-    "which": "lower-right",
-    "vel": false
+    "which": "lower-right"
   },
   "12": {
     "type": "ankle",
-    "which": "lower-right",
-    "vel": false
+    "which": "lower-right"
   },
   "13": {
-    "type": "torso",
-    "vel": true
+    "type": "torso"
   },
   "14": {
-    "type": "torso",
-    "vel": true
+    "type": "torso"
   },
   "15": {
-    "type": "torso",
-    "vel": true
+    "type": "torso"
   },
   "16": {
-    "type": "torso",
-    "vel": true
+    "type": "torso"
   },
   "17": {
-    "type": "torso",
-    "vel": true
+    "type": "torso"
   },
   "18": {
-    "type": "torso",
-    "vel": true
+    "type": "torso"
   },
   "19": {
     "type": "hip",
-    "which": "upper-right",
-    "vel": true
+    "which": "upper-right"
   },
   "20": {
     "type": "ankle",
-    "which": "upper-right",
-    "vel": true
+    "which": "upper-right"
   },
   "21": {
     "type": "hip",
-    "which": "upper-left",
-    "vel": true
+    "which": "upper-left"
   },
   "22": {
     "type": "ankle",
-    "which": "upper-left",
-    "vel": true
+    "which": "upper-left"
   },
   "23": {
     "type": "hip",
-    "which": "lower-left",
-    "vel": true
+    "which": "lower-left"
   },
   "24": {
     "type": "ankle",
-    "which": "lower-left",
-    "vel": true
+    "which": "lower-left"
   },
   "25": {
     "type": "hip",
-    "which": "lower-right",
-    "vel": true
+    "which": "lower-right"
   },
   "26": {
     "type": "ankle",
-    "which": "lower-right",
-    "vel": true
+    "which": "lower-right"
   },
   "27": null,
   "28": null,

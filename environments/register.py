@@ -6,7 +6,7 @@ MAX_EPISODE_STEPS = 1000
 TASKS = {
     "Centipede": [3, 5, 7] + [4, 6, 8, 10, 12] + [20, 30, 40, 50, 100],
     "CpCentipede": [4, 6, 8, 10, 12],
-    "Snake": list(range(3, 10)) + [10, 20, 40],
+    "Snake": list(range(3, 10)) + [20, 40],
     "BackSnake": list(range(3, 10))
 }
 CLASSES = {

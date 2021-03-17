@@ -6,7 +6,7 @@ environments_dir="${proj_dir}/environments/assets"
 export PYTHONPATH=$PYTHONPATH:$proj_dir
 cd "$proj_dir"
 
-env_ids="Ant-v2 HalfCheetah-v2 Hopper-v2 Humanoid-v2 Walker2d-v2"
+env_ids=""
 for env_xml in "$environments_dir"/*.xml; do
   env_id=$(basename -- "$env_xml")
   env_id="${env_id%.*}"

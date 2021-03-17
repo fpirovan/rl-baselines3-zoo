@@ -64,11 +64,6 @@ class BackSnakeEnv(SnakeEnv):
         SnakeEnv.reset_model(self)
 
 
-class SnakeTenEnv(SnakeEnv):
-    def __init__(self):
-        SnakeEnv.__init__(self, pod_number=10)
-
-
 class SnakeTwentyEnv(SnakeEnv):
     def __init__(self):
         SnakeEnv.__init__(self, pod_number=20)

@@ -109,3 +109,353 @@ CentipedeTwelve-v1:
   ent_coef: 0.0
   learning_rate: 2.5e-4
   clip_range: 0.2
+
+CpCentipedeFour-v1:
+  normalize: true
+  n_envs: 8
+  n_timesteps: !!float 4e6
+  policy: 'MlpPolicy'
+  n_steps: 2048
+  batch_size: 64
+  gae_lambda: 0.95
+  gamma: 0.99
+  n_epochs: 10
+  ent_coef: 0.0
+  learning_rate: 2.5e-4
+  clip_range: 0.2
+
+CpCentipedeSix-v1:
+  normalize: true
+  n_envs: 8
+  n_timesteps: !!float 4e6
+  policy: 'MlpPolicy'
+  n_steps: 2048
+  batch_size: 64
+  gae_lambda: 0.95
+  gamma: 0.99
+  n_epochs: 10
+  ent_coef: 0.0
+  learning_rate: 2.5e-4
+  clip_range: 0.2
+
+CpCentipedeEight-v1:
+  normalize: true
+  n_envs: 8
+  n_timesteps: !!float 4e6
+  policy: 'MlpPolicy'
+  n_steps: 2048
+  batch_size: 64
+  gae_lambda: 0.95
+  gamma: 0.99
+  n_epochs: 10
+  ent_coef: 0.0
+  learning_rate: 2.5e-4
+  clip_range: 0.2
+
+CpCentipedeTen-v1:
+  normalize: true
+  n_envs: 8
+  n_timesteps: !!float 4e6
+  policy: 'MlpPolicy'
+  n_steps: 2048
+  batch_size: 64
+  gae_lambda: 0.95
+  gamma: 0.99
+  n_epochs: 10
+  ent_coef: 0.0
+  learning_rate: 2.5e-4
+  clip_range: 0.2
+
+CpCentipedeTwelve-v1:
+  normalize: true
+  n_envs: 8
+  n_timesteps: !!float 4e6
+  policy: 'MlpPolicy'
+  n_steps: 2048
+  batch_size: 64
+  gae_lambda: 0.95
+  gamma: 0.99
+  n_epochs: 10
+  ent_coef: 0.0
+  learning_rate: 2.5e-4
+  clip_range: 0.2
+
+SnakeThree-v1:
+  normalize: true
+  n_envs: 8
+  n_timesteps: !!float 2e6
+  policy: 'MlpPolicy'
+  n_steps: 2048
+  batch_size: 64
+  gae_lambda: 0.95
+  gamma: 0.99
+  n_epochs: 10
+  ent_coef: 0.0
+  learning_rate: 2.5e-4
+  clip_range: 0.2
+
+SnakeFour-v1:
+  normalize: true
+  n_envs: 8
+  n_timesteps: !!float 2e6
+  policy: 'MlpPolicy'
+  n_steps: 2048
+  batch_size: 64
+  gae_lambda: 0.95
+  gamma: 0.99
+  n_epochs: 10
+  ent_coef: 0.0
+  learning_rate: 2.5e-4
+  clip_range: 0.2
+
+SnakeFive-v1:
+  normalize: true
+  n_envs: 8
+  n_timesteps: !!float 2e6
+  policy: 'MlpPolicy'
+  n_steps: 2048
+  batch_size: 64
+  gae_lambda: 0.95
+  gamma: 0.99
+  n_epochs: 10
+  ent_coef: 0.0
+  learning_rate: 2.5e-4
+  clip_range: 0.2
+
+SnakeSix-v1:
+  normalize: true
+  n_envs: 8
+  n_timesteps: !!float 2e6
+  policy: 'MlpPolicy'
+  n_steps: 2048
+  batch_size: 64
+  gae_lambda: 0.95
+  gamma: 0.99
+  n_epochs: 10
+  ent_coef: 0.0
+  learning_rate: 2.5e-4
+  clip_range: 0.2
+
+SnakeSeven-v1:
+  normalize: true
+  n_envs: 8
+  n_timesteps: !!float 2e6
+  policy: 'MlpPolicy'
+  n_steps: 2048
+  batch_size: 64
+  gae_lambda: 0.95
+  gamma: 0.99
+  n_epochs: 10
+  ent_coef: 0.0
+  learning_rate: 2.5e-4
+  clip_range: 0.2
+
+SnakeEight-v1:
+  normalize: true
+  n_envs: 8
+  n_timesteps: !!float 2e6
+  policy: 'MlpPolicy'
+  n_steps: 2048
+  batch_size: 64
+  gae_lambda: 0.95
+  gamma: 0.99
+  n_epochs: 10
+  ent_coef: 0.0
+  learning_rate: 2.5e-4
+  clip_range: 0.2
+
+SnakeNine-v1:
+  normalize: true
+  n_envs: 8
+  n_timesteps: !!float 2e6
+  policy: 'MlpPolicy'
+  n_steps: 2048
+  batch_size: 64
+  gae_lambda: 0.95
+  gamma: 0.99
+  n_epochs: 10
+  ent_coef: 0.0
+  learning_rate: 2.5e-4
+  clip_range: 0.2
+
+BackSnakeThree-v1:
+  normalize: true
+  n_envs: 8
+  n_timesteps: !!float 2e6
+  policy: 'MlpPolicy'
+  n_steps: 2048
+  batch_size: 64
+  gae_lambda: 0.95
+  gamma: 0.99
+  n_epochs: 10
+  ent_coef: 0.0
+  learning_rate: 2.5e-4
+  clip_range: 0.2
+
+BackSnakeFour-v1:
+  normalize: true
+  n_envs: 8
+  n_timesteps: !!float 2e6
+  policy: 'MlpPolicy'
+  n_steps: 2048
+  batch_size: 64
+  gae_lambda: 0.95
+  gamma: 0.99
+  n_epochs: 10
+  ent_coef: 0.0
+  learning_rate: 2.5e-4
+  clip_range: 0.2
+
+BackSnakeFive-v1:
+  normalize: true
+  n_envs: 8
+  n_timesteps: !!float 2e6
+  policy: 'MlpPolicy'
+  n_steps: 2048
+  batch_size: 64
+  gae_lambda: 0.95
+  gamma: 0.99
+  n_epochs: 10
+  ent_coef: 0.0
+  learning_rate: 2.5e-4
+  clip_range: 0.2
+
+BackSnakeSix-v1:
+  normalize: true
+  n_envs: 8
+  n_timesteps: !!float 2e6
+  policy: 'MlpPolicy'
+  n_steps: 2048
+  batch_size: 64
+  gae_lambda: 0.95
+  gamma: 0.99
+  n_epochs: 10
+  ent_coef: 0.0
+  learning_rate: 2.5e-4
+  clip_range: 0.2
+
+BackSnakeSeven-v1:
+  normalize: true
+  n_envs: 8
+  n_timesteps: !!float 2e6
+  policy: 'MlpPolicy'
+  n_steps: 2048
+  batch_size: 64
+  gae_lambda: 0.95
+  gamma: 0.99
+  n_epochs: 10
+  ent_coef: 0.0
+  learning_rate: 2.5e-4
+  clip_range: 0.2
+
+BackSnakeEight-v1:
+  normalize: true
+  n_envs: 8
+  n_timesteps: !!float 2e6
+  policy: 'MlpPolicy'
+  n_steps: 2048
+  batch_size: 64
+  gae_lambda: 0.95
+  gamma: 0.99
+  n_epochs: 10
+  ent_coef: 0.0
+  learning_rate: 2.5e-4
+  clip_range: 0.2
+
+BackSnakeNine-v1:
+  normalize: true
+  n_envs: 8
+  n_timesteps: !!float 2e6
+  policy: 'MlpPolicy'
+  n_steps: 2048
+  batch_size: 64
+  gae_lambda: 0.95
+  gamma: 0.99
+  n_epochs: 10
+  ent_coef: 0.0
+  learning_rate: 2.5e-4
+  clip_range: 0.2
+
+WalkersHalfHumanoid-v1:
+  normalize: true
+  n_envs: 8
+  n_timesteps: !!float 4e6
+  policy: 'MlpPolicy'
+  n_steps: 2048
+  batch_size: 64
+  gae_lambda: 0.95
+  gamma: 0.99
+  n_epochs: 10
+  ent_coef: 0.0
+  learning_rate: 2.5e-4
+  clip_range: 0.2
+
+WalkersOstrich-v1:
+  normalize: true
+  n_envs: 8
+  n_timesteps: !!float 4e6
+  policy: 'MlpPolicy'
+  n_steps: 2048
+  batch_size: 64
+  gae_lambda: 0.95
+  gamma: 0.99
+  n_epochs: 10
+  ent_coef: 0.0
+  learning_rate: 2.5e-4
+  clip_range: 0.2
+
+WalkersHopper-v1:
+  normalize: true
+  n_envs: 8
+  n_timesteps: !!float 4e6
+  policy: 'MlpPolicy'
+  n_steps: 2048
+  batch_size: 64
+  gae_lambda: 0.95
+  gamma: 0.99
+  n_epochs: 10
+  ent_coef: 0.0
+  learning_rate: 2.5e-4
+  clip_range: 0.2
+
+WalkersHalfCheetah-v1:
+  normalize: true
+  n_envs: 8
+  n_timesteps: !!float 4e6
+  policy: 'MlpPolicy'
+  n_steps: 2048
+  batch_size: 64
+  gae_lambda: 0.95
+  gamma: 0.99
+  n_epochs: 10
+  ent_coef: 0.0
+  learning_rate: 2.5e-4
+  clip_range: 0.2
+
+WalkersFullCheetah-v1:
+  normalize: true
+  n_envs: 8
+  n_timesteps: !!float 4e6
+  policy: 'MlpPolicy'
+  n_steps: 2048
+  batch_size: 64
+  gae_lambda: 0.95
+  gamma: 0.99
+  n_epochs: 10
+  ent_coef: 0.0
+  learning_rate: 2.5e-4
+  clip_range: 0.2
+
+WalkersKangaroo-v1:
+  normalize: true
+  n_envs: 8
+  n_timesteps: !!float 4e6
+  policy: 'MlpPolicy'
+  n_steps: 2048
+  batch_size: 64
+  gae_lambda: 0.95
+  gamma: 0.99
+  n_epochs: 10
+  ent_coef: 0.0
+  learning_rate: 2.5e-4
+  clip_range: 0.2
