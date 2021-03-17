@@ -3,7 +3,7 @@
 proj_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" &>/dev/null && pwd)"
 environments_dir="${proj_dir}/environments/assets"
 
-export PYTHONPATH=$PYTHONPATH:$proj_dir
+export PYTHONPATH="${PYTHONPATH}:${proj_dir}"
 cd "$proj_dir"
 
 env_ids=""
