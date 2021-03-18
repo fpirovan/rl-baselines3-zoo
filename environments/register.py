@@ -23,6 +23,8 @@ THRESHOLDS = {
 
 
 def register_all_envs():
+    new_env_ids = []
+
     for env in TASKS:
         env_class = CLASSES[env]
         file_name = f"environments.{env_class}:"
@@ -32,46 +34,67 @@ def register_all_envs():
             registered_name = registered_name.replace(" ", "")
             entry_point = file_name + registered_name + "Env"
 
+            env_id = f"{registered_name}-v1"
             register(
-                id=registered_name + "-v1",
+                id=env_id,
                 entry_point=entry_point,
                 max_episode_steps=MAX_EPISODE_STEPS,
                 reward_threshold=THRESHOLDS[env_class],
             )
+            new_env_ids.append(env_id)
 
+    env_id = "WalkersHalfHumanoid-v1"
     register(
-        id="WalkersHalfHumanoid-v1",
+        id=env_id,
         entry_point="environments.walkers:WalkersHalfHumanoidEnv",
         max_episode_steps=MAX_EPISODE_STEPS,
         reward_threshold=THRESHOLDS["walkers"],
     )
+    new_env_ids.append(env_id)
+
+    env_id = "WalkersOstrich-v1"
     register(
-        id="WalkersOstrich-v1",
+        id=env_id,
         entry_point="environments.walkers:WalkersOstrichEnv",
         max_episode_steps=MAX_EPISODE_STEPS,
         reward_threshold=THRESHOLDS["walkers"],
     )
+    new_env_ids.append(env_id)
+
+    env_id = "WalkersHopper-v1"
     register(
-        id="WalkersHopper-v1",
+        id=env_id,
         entry_point="environments.walkers:WalkersHopperEnv",
         max_episode_steps=MAX_EPISODE_STEPS,
         reward_threshold=THRESHOLDS["walkers"],
     )
+    new_env_ids.append(env_id)
+
+    env_id = "WalkersHalfCheetah-v1"
     register(
-        id="WalkersHalfCheetah-v1",
+        id=env_id,
         entry_point="environments.walkers:WalkersHalfCheetahEnv",
         max_episode_steps=MAX_EPISODE_STEPS,
         reward_threshold=THRESHOLDS["walkers"],
     )
+    new_env_ids.append(env_id)
+
+    env_id = "WalkersFullCheetah-v1"
     register(
-        id="WalkersFullCheetah-v1",
+        id=env_id,
         entry_point="environments.walkers:WalkersFullCheetahEnv",
         max_episode_steps=MAX_EPISODE_STEPS,
         reward_threshold=THRESHOLDS["walkers"],
     )
+    new_env_ids.append(env_id)
+
+    env_id = "WalkersKangaroo-v1"
     register(
-        id="WalkersKangaroo-v1",
+        id=env_id,
         entry_point="environments.walkers:WalkersKangarooEnv",
         max_episode_steps=MAX_EPISODE_STEPS,
         reward_threshold=THRESHOLDS["walkers"],
     )
+    new_env_ids.append(env_id)
+
+    return new_env_ids
