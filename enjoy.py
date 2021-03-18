@@ -212,6 +212,9 @@ def main():  # noqa: C901
     except KeyboardInterrupt:
         pass
 
+    episode_rewards.append(episode_reward)
+    episode_lengths.append(ep_len)
+
     if args.verbose > 0 and len(successes) > 0:
         print(f"Success rate: {100 * np.mean(successes):.2f}%")
 
