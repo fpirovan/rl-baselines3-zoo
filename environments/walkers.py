@@ -32,7 +32,7 @@ class WalkersHalfHumanoidEnv(mujoco_env.MujocoEnv, utils.EzPickle):
     def _get_obs(self):
         qpos = self.sim.data.qpos
         qvel = self.sim.data.qvel
-        return np.concatenate([qpos[1:], np.clip(qvel, -10, 10)]).ravel()
+        return np.concatenate([qpos[1:], np.clip(qvel, -10, 10)])
 
     def reset_model(self):
         self.set_state(
@@ -74,7 +74,7 @@ class WalkersOstrichEnv(mujoco_env.MujocoEnv, utils.EzPickle):
     def _get_obs(self):
         qpos = self.sim.data.qpos
         qvel = self.sim.data.qvel
-        return np.concatenate([qpos[1:], np.clip(qvel, -10, 10)]).ravel()
+        return np.concatenate([qpos[1:], np.clip(qvel, -10, 10)])
 
     def reset_model(self):
         self.set_state(
@@ -114,15 +114,15 @@ class WalkersHopperEnv(mujoco_env.MujocoEnv, utils.EzPickle):
         return ob, reward, done, {}
 
     def _get_obs(self):
-        return np.concatenate([
-            self.sim.data.qpos.flat[1:],
-            np.clip(self.sim.data.qvel.flat, -10, 10)
-        ])
+        qpos = self.sim.data.qpos
+        qvel = self.sim.data.qvel
+        return np.concatenate([qpos[1:], np.clip(qvel, -10, 10)])
 
     def reset_model(self):
-        qpos = self.init_qpos + self.np_random.uniform(low=-0.005, high=0.005, size=self.model.nq)
-        qvel = self.init_qvel + self.np_random.uniform(low=-0.005, high=0.005, size=self.model.nv)
-        self.set_state(qpos, qvel)
+        self.set_state(
+            self.init_qpos + self.np_random.uniform(low=-0.005, high=0.005, size=self.model.nq),
+            self.init_qvel + self.np_random.uniform(low=-0.005, high=0.005, size=self.model.nv)
+        )
         return self._get_obs()
 
     def viewer_setup(self):
@@ -159,15 +159,15 @@ class WalkersHalfCheetahEnv(mujoco_env.MujocoEnv, utils.EzPickle):
         return ob, reward, done, dict(reward_run=reward_run, reward_ctrl=reward_ctrl)
 
     def _get_obs(self):
-        return np.concatenate([
-            self.sim.data.qpos.flat[1:],
-            np.clip(self.sim.data.qvel.flat, -10, 10)
-        ])
+        qpos = self.sim.data.qpos
+        qvel = self.sim.data.qvel
+        return np.concatenate([qpos[1:], np.clip(qvel, -10, 10)])
 
     def reset_model(self):
-        qpos = self.init_qpos + self.np_random.uniform(low=-0.1, high=0.1, size=self.model.nq)
-        qvel = self.init_qvel + self.np_random.randn(self.model.nv) * 0.1
-        self.set_state(qpos, qvel)
+        self.set_state(
+            self.init_qpos + self.np_random.uniform(low=-0.1, high=0.1, size=self.model.nq),
+            self.init_qvel + self.np_random.randn(self.model.nv) * 0.1
+        )
         return self._get_obs()
 
     def viewer_setup(self):
@@ -192,22 +192,23 @@ class WalkersFullCheetahEnv(mujoco_env.MujocoEnv, utils.EzPickle):
         alive_bonus = 1
         reward += alive_bonus
         s = self.state_vector()
-        done = not (np.isfinite(s).all() and (np.abs(s[2:]) < 100).all() and
-                    self.sim.data.site_xpos[0, 2] > 0.7 and
-                    self.sim.data.site_xpos[1, 2] > 0.7
-                    )
+        done = not (
+                np.isfinite(s).all() and (np.abs(s[2:]) < 100).all() and
+                self.sim.data.site_xpos[0, 2] > 0.7 and
+                self.sim.data.site_xpos[1, 2] > 0.7
+        )
         return ob, reward, done, dict(reward_run=reward_run, reward_ctrl=reward_ctrl)
 
     def _get_obs(self):
-        return np.concatenate([
-            self.sim.data.qpos.flat[1:],
-            np.clip(self.sim.data.qvel.flat, -10, 10)
-        ])
+        qpos = self.sim.data.qpos
+        qvel = self.sim.data.qvel
+        return np.concatenate([qpos[1:], np.clip(qvel, -10, 10)])
 
     def reset_model(self):
-        qpos = self.init_qpos + self.np_random.uniform(low=-0.1, high=0.1, size=self.model.nq)
-        qvel = self.init_qvel + self.np_random.randn(self.model.nv) * 0.1
-        self.set_state(qpos, qvel)
+        self.set_state(
+            self.init_qpos + self.np_random.uniform(low=-0.1, high=0.1, size=self.model.nq),
+            self.init_qvel + self.np_random.randn(self.model.nv) * 0.1
+        )
         return self._get_obs()
 
     def viewer_setup(self):
@@ -239,7 +240,7 @@ class WalkersKangarooEnv(mujoco_env.MujocoEnv, utils.EzPickle):
     def _get_obs(self):
         qpos = self.sim.data.qpos
         qvel = self.sim.data.qvel
-        return np.concatenate([qpos[1:], np.clip(qvel, -10, 10)]).ravel()
+        return np.concatenate([qpos[1:], np.clip(qvel, -10, 10)])
 
     def reset_model(self):
         self.set_state(
