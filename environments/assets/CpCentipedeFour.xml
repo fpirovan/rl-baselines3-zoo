@@ -83,10 +83,6 @@
         </body>
     </worldbody>
     <actuator>
-        <motor ctrllimited="true" ctrlrange="-1.0 1.0" joint="lefthip_0" gear="150"/>
-        <motor ctrllimited="true" ctrlrange="-1.0 1.0" joint="ankle_0" gear="150"/>
-        <motor ctrllimited="true" ctrlrange="-1.0 1.0" joint="righthip_1" gear="150"/>
-        <motor ctrllimited="true" ctrlrange="-1.0 1.0" joint="ankle_1" gear="150"/>
         <motor ctrllimited="true" ctrlrange="-1.0 1.0" joint="lefthip_2" gear="150"/>
         <motor ctrllimited="true" ctrlrange="-1.0 1.0" joint="ankle_2" gear="150"/>
         <motor ctrllimited="true" ctrlrange="-1.0 1.0" joint="righthip_3" gear="150"/>

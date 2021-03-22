@@ -10,7 +10,7 @@ from settings import BASE_DIR
 
 class SnakeEnv(mujoco_env.MujocoEnv, utils.EzPickle):
     def __init__(self, pod_number=3):
-        xml_name = "Snake" + self.get_env_num_str(pod_number) + ".xml"
+        xml_name = f"Snake{self.get_env_num_str(pod_number)}.xml"
         xml_path = pjoin(BASE_DIR, "environments", "assets", xml_name)
         self.num_body = pod_number
         self._direction = 0
@@ -61,7 +61,7 @@ class BackSnakeEnv(SnakeEnv):
 
     def reset_model(self):
         self._direction = 1
-        SnakeEnv.reset_model(self)
+        return SnakeEnv.reset_model(self)
 
 
 class SnakeTwentyEnv(SnakeEnv):

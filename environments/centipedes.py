@@ -11,9 +11,9 @@ from settings import BASE_DIR
 class CentipedeEnv(mujoco_env.MujocoEnv, utils.EzPickle):
     def __init__(self, num_legs=4, is_crippled=False):
         if is_crippled:
-            xml_name = "CpCentipede" + self.get_env_num_str(num_legs) + ".xml"
+            xml_name = f"CpCentipede{self.get_env_num_str(num_legs)}.xml"
         else:
-            xml_name = "Centipede" + self.get_env_num_str(num_legs) + ".xml"
+            xml_name = f"Centipede{self.get_env_num_str(num_legs)}.xml"
         xml_path = pjoin(BASE_DIR, "environments", "assets", xml_name)
 
         self.num_body = int(np.ceil(num_legs / 2.0))
@@ -155,11 +155,6 @@ class CentipedeTwentyEnv(CentipedeEnv):
 class CentipedeFortyEnv(CentipedeEnv):
     def __init__(self):
         CentipedeEnv.__init__(self, num_legs=40)
-
-
-class CentipedeOnehundredEnv(CentipedeEnv):
-    def __init__(self):
-        CentipedeEnv.__init__(self, num_legs=100)
 
 
 class CentipedeThreeEnv(CentipedeEnv):
