@@ -208,7 +208,7 @@ CpCentipedeTwelve-v1:
   learning_rate: 2.5e-4
   clip_range: 0.2
 
-SnakeThree-v1:
+XSnakeThree-v1:
   normalize: true
   n_envs: 8
   n_timesteps: !!float 2e6
@@ -222,7 +222,7 @@ SnakeThree-v1:
   learning_rate: 2.5e-4
   clip_range: 0.2
 
-SnakeFour-v1:
+XSnakeFour-v1:
   normalize: true
   n_envs: 8
   n_timesteps: !!float 2e6
@@ -236,7 +236,7 @@ SnakeFour-v1:
   learning_rate: 2.5e-4
   clip_range: 0.2
 
-SnakeFive-v1:
+XSnakeFive-v1:
   normalize: true
   n_envs: 8
   n_timesteps: !!float 2e6
@@ -250,7 +250,7 @@ SnakeFive-v1:
   learning_rate: 2.5e-4
   clip_range: 0.2
 
-SnakeSix-v1:
+XSnakeSix-v1:
   normalize: true
   n_envs: 8
   n_timesteps: !!float 2e6
@@ -264,7 +264,7 @@ SnakeSix-v1:
   learning_rate: 2.5e-4
   clip_range: 0.2
 
-SnakeSeven-v1:
+XSnakeSeven-v1:
   normalize: true
   n_envs: 8
   n_timesteps: !!float 2e6
@@ -278,7 +278,7 @@ SnakeSeven-v1:
   learning_rate: 2.5e-4
   clip_range: 0.2
 
-SnakeEight-v1:
+XSnakeEight-v1:
   normalize: true
   n_envs: 8
   n_timesteps: !!float 2e6
@@ -292,7 +292,7 @@ SnakeEight-v1:
   learning_rate: 2.5e-4
   clip_range: 0.2
 
-SnakeNine-v1:
+XSnakeNine-v1:
   normalize: true
   n_envs: 8
   n_timesteps: !!float 2e6
@@ -306,7 +306,7 @@ SnakeNine-v1:
   learning_rate: 2.5e-4
   clip_range: 0.2
 
-SnakeTwenty-v1:
+XSnakeTwenty-v1:
   normalize: true
   n_envs: 8
   n_timesteps: !!float 4e6
@@ -320,7 +320,7 @@ SnakeTwenty-v1:
   learning_rate: 2.5e-4
   clip_range: 0.2
 
-SnakeForty-v1:
+XSnakeForty-v1:
   normalize: true
   n_envs: 8
   n_timesteps: !!float 4e6
@@ -334,7 +334,7 @@ SnakeForty-v1:
   learning_rate: 2.5e-4
   clip_range: 0.2
 
-BackSnakeThree-v1:
+YSnakeThree-v1:
   normalize: true
   n_envs: 8
   n_timesteps: !!float 2e6
@@ -348,7 +348,7 @@ BackSnakeThree-v1:
   learning_rate: 2.5e-4
   clip_range: 0.2
 
-BackSnakeFour-v1:
+YSnakeFour-v1:
   normalize: true
   n_envs: 8
   n_timesteps: !!float 2e6
@@ -362,7 +362,7 @@ BackSnakeFour-v1:
   learning_rate: 2.5e-4
   clip_range: 0.2
 
-BackSnakeFive-v1:
+YSnakeFive-v1:
   normalize: true
   n_envs: 8
   n_timesteps: !!float 2e6
@@ -376,7 +376,7 @@ BackSnakeFive-v1:
   learning_rate: 2.5e-4
   clip_range: 0.2
 
-BackSnakeSix-v1:
+YSnakeSix-v1:
   normalize: true
   n_envs: 8
   n_timesteps: !!float 2e6
@@ -390,7 +390,7 @@ BackSnakeSix-v1:
   learning_rate: 2.5e-4
   clip_range: 0.2
 
-BackSnakeSeven-v1:
+YSnakeSeven-v1:
   normalize: true
   n_envs: 8
   n_timesteps: !!float 2e6
@@ -404,7 +404,7 @@ BackSnakeSeven-v1:
   learning_rate: 2.5e-4
   clip_range: 0.2
 
-BackSnakeEight-v1:
+YSnakeEight-v1:
   normalize: true
   n_envs: 8
   n_timesteps: !!float 2e6
@@ -418,7 +418,7 @@ BackSnakeEight-v1:
   learning_rate: 2.5e-4
   clip_range: 0.2
 
-BackSnakeNine-v1:
+YSnakeNine-v1:
   normalize: true
   n_envs: 8
   n_timesteps: !!float 2e6
