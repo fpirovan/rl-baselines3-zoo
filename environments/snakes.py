@@ -64,16 +64,6 @@ class YSnakeEnv(XSnakeEnv):
         return XSnakeEnv.reset_model(self)
 
 
-class XSnakeTwentyEnv(XSnakeEnv):
-    def __init__(self):
-        XSnakeEnv.__init__(self, pod_number=20)
-
-
-class XSnakeFortyEnv(XSnakeEnv):
-    def __init__(self):
-        XSnakeEnv.__init__(self, pod_number=40)
-
-
 class XSnakeThreeEnv(XSnakeEnv):
     def __init__(self):
         XSnakeEnv.__init__(self, pod_number=3)
