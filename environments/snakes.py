@@ -8,7 +8,7 @@ from gym.envs.mujoco import mujoco_env
 from settings import BASE_DIR
 
 
-class SnakeEnv(mujoco_env.MujocoEnv, utils.EzPickle):
+class XSnakeEnv(mujoco_env.MujocoEnv, utils.EzPickle):
     def __init__(self, pod_number=3):
         xml_name = f"Snake{self.get_env_num_str(pod_number)}.xml"
         xml_path = pjoin(BASE_DIR, "environments", "assets", xml_name)
@@ -55,90 +55,90 @@ class SnakeEnv(mujoco_env.MujocoEnv, utils.EzPickle):
         self.viewer.cam.trackbodyid = self.model.body_names.index(body_name)
 
 
-class BackSnakeEnv(SnakeEnv):
+class YSnakeEnv(XSnakeEnv):
     def __init__(self, pod_number=3):
-        SnakeEnv.__init__(self, pod_number=pod_number)
+        XSnakeEnv.__init__(self, pod_number=pod_number)
 
     def reset_model(self):
         self._direction = 1
-        return SnakeEnv.reset_model(self)
+        return XSnakeEnv.reset_model(self)
 
 
-class SnakeTwentyEnv(SnakeEnv):
+class XSnakeTwentyEnv(XSnakeEnv):
     def __init__(self):
-        SnakeEnv.__init__(self, pod_number=20)
+        XSnakeEnv.__init__(self, pod_number=20)
 
 
-class SnakeFortyEnv(SnakeEnv):
+class XSnakeFortyEnv(XSnakeEnv):
     def __init__(self):
-        SnakeEnv.__init__(self, pod_number=40)
+        XSnakeEnv.__init__(self, pod_number=40)
 
 
-class SnakeThreeEnv(SnakeEnv):
+class XSnakeThreeEnv(XSnakeEnv):
     def __init__(self):
-        SnakeEnv.__init__(self, pod_number=3)
+        XSnakeEnv.__init__(self, pod_number=3)
 
 
-class SnakeFourEnv(SnakeEnv):
+class XSnakeFourEnv(XSnakeEnv):
     def __init__(self):
-        SnakeEnv.__init__(self, pod_number=4)
+        XSnakeEnv.__init__(self, pod_number=4)
 
 
-class SnakeFiveEnv(SnakeEnv):
+class XSnakeFiveEnv(XSnakeEnv):
     def __init__(self):
-        SnakeEnv.__init__(self, pod_number=5)
+        XSnakeEnv.__init__(self, pod_number=5)
 
 
-class SnakeSixEnv(SnakeEnv):
+class XSnakeSixEnv(XSnakeEnv):
     def __init__(self):
-        SnakeEnv.__init__(self, pod_number=6)
+        XSnakeEnv.__init__(self, pod_number=6)
 
 
-class SnakeSevenEnv(SnakeEnv):
+class XSnakeSevenEnv(XSnakeEnv):
     def __init__(self):
-        SnakeEnv.__init__(self, pod_number=7)
+        XSnakeEnv.__init__(self, pod_number=7)
 
 
-class SnakeEightEnv(SnakeEnv):
+class XSnakeEightEnv(XSnakeEnv):
     def __init__(self):
-        SnakeEnv.__init__(self, pod_number=8)
+        XSnakeEnv.__init__(self, pod_number=8)
 
 
-class SnakeNineEnv(SnakeEnv):
+class XSnakeNineEnv(XSnakeEnv):
     def __init__(self):
-        SnakeEnv.__init__(self, pod_number=9)
+        XSnakeEnv.__init__(self, pod_number=9)
 
 
-class BackSnakeThreeEnv(BackSnakeEnv):
+class YSnakeThreeEnv(YSnakeEnv):
     def __init__(self):
-        BackSnakeEnv.__init__(self, pod_number=3)
+        YSnakeEnv.__init__(self, pod_number=3)
 
 
-class BackSnakeFourEnv(BackSnakeEnv):
+class YSnakeFourEnv(YSnakeEnv):
     def __init__(self):
-        BackSnakeEnv.__init__(self, pod_number=4)
+        YSnakeEnv.__init__(self, pod_number=4)
 
 
-class BackSnakeFiveEnv(BackSnakeEnv):
+class YSnakeFiveEnv(YSnakeEnv):
     def __init__(self):
-        BackSnakeEnv.__init__(self, pod_number=5)
+        YSnakeEnv.__init__(self, pod_number=5)
 
 
-class BackSnakeSixEnv(BackSnakeEnv):
+class YSnakeSixEnv(YSnakeEnv):
     def __init__(self):
-        BackSnakeEnv.__init__(self, pod_number=6)
+        YSnakeEnv.__init__(self, pod_number=6)
 
 
-class BackSnakeSevenEnv(BackSnakeEnv):
+class YSnakeSevenEnv(YSnakeEnv):
     def __init__(self):
-        BackSnakeEnv.__init__(self, pod_number=7)
+        YSnakeEnv.__init__(self, pod_number=7)
 
 
-class BackSnakeEightEnv(BackSnakeEnv):
+class YSnakeEightEnv(YSnakeEnv):
     def __init__(self):
-        BackSnakeEnv.__init__(self, pod_number=8)
+        YSnakeEnv.__init__(self, pod_number=8)
 
 
-class BackSnakeNineEnv(BackSnakeEnv):
+class YSnakeNineEnv(YSnakeEnv):
     def __init__(self):
-        BackSnakeEnv.__init__(self, pod_number=9)
+        YSnakeEnv.__init__(self, pod_number=9)
