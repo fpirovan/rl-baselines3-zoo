@@ -12,8 +12,8 @@ TASKS = {
 CLASSES = {
     "Centipede": "centipedes",
     "CpCentipede": "centipedes",
-    "Snake": "snakes",
-    "BackSnake": "snakes"
+    "XSnake": "snakes",
+    "YSnake": "snakes"
 }
 THRESHOLDS = {
     "centipedes": 6000.0,
