@@ -16,7 +16,7 @@ class XSnakeEnv(mujoco_env.MujocoEnv, utils.EzPickle):
         self._direction = 0
         self.ctrl_cost_coeff = 0.0001 / pod_number * 3
 
-        mujoco_env.MujocoEnv.__init__(self, xml_path, 4)
+        mujoco_env.MujocoEnv.__init__(self, xml_path, 5)
         utils.EzPickle.__init__(self)
 
     @staticmethod

@@ -11,7 +11,7 @@ class WalkersHalfHumanoidEnv(mujoco_env.MujocoEnv, utils.EzPickle):
     def __init__(self):
         xml_path = pjoin(BASE_DIR, "environments", "assets", "WalkersHalfhumanoid.xml")
 
-        mujoco_env.MujocoEnv.__init__(self, xml_path, 4)
+        mujoco_env.MujocoEnv.__init__(self, xml_path, 5)
         utils.EzPickle.__init__(self)
 
     def step(self, a):
@@ -52,7 +52,7 @@ class WalkersOstrichEnv(mujoco_env.MujocoEnv, utils.EzPickle):
     def __init__(self):
         xml_path = pjoin(BASE_DIR, "environments", "assets", "WalkersOstrich.xml")
 
-        mujoco_env.MujocoEnv.__init__(self, xml_path, 4)
+        mujoco_env.MujocoEnv.__init__(self, xml_path, 5)
         utils.EzPickle.__init__(self)
 
     def step(self, a):
@@ -94,7 +94,7 @@ class WalkersHopperEnv(mujoco_env.MujocoEnv, utils.EzPickle):
     def __init__(self):
         xml_path = pjoin(BASE_DIR, "environments", "assets", "WalkersHopper.xml")
 
-        mujoco_env.MujocoEnv.__init__(self, xml_path, 4)
+        mujoco_env.MujocoEnv.__init__(self, xml_path, 5)
         utils.EzPickle.__init__(self)
 
     def step(self, a):
@@ -136,7 +136,7 @@ class WalkersHalfCheetahEnv(mujoco_env.MujocoEnv, utils.EzPickle):
     def __init__(self):
         xml_path = pjoin(BASE_DIR, "environments", "assets", "WalkersHalfCheetah.xml")
 
-        mujoco_env.MujocoEnv.__init__(self, xml_path, 4)
+        mujoco_env.MujocoEnv.__init__(self, xml_path, 5)
         utils.EzPickle.__init__(self)
 
     def step(self, action):
@@ -178,7 +178,7 @@ class WalkersFullCheetahEnv(mujoco_env.MujocoEnv, utils.EzPickle):
     def __init__(self):
         xml_path = pjoin(BASE_DIR, "environments", "assets", "WalkersFullCheetah.xml")
 
-        mujoco_env.MujocoEnv.__init__(self, xml_path, 4)
+        mujoco_env.MujocoEnv.__init__(self, xml_path, 5)
         utils.EzPickle.__init__(self)
 
     def step(self, action):
@@ -219,7 +219,7 @@ class WalkersKangarooEnv(mujoco_env.MujocoEnv, utils.EzPickle):
     def __init__(self):
         xml_path = pjoin(BASE_DIR, "environments", "assets", "WalkersKangaroo.xml")
 
-        mujoco_env.MujocoEnv.__init__(self, xml_path, 4)
+        mujoco_env.MujocoEnv.__init__(self, xml_path, 5)
         utils.EzPickle.__init__(self)
 
     def step(self, a):

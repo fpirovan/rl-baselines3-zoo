@@ -20,6 +20,7 @@
 
 
     <body name="torso" pos="0 0 1.25">
+      <camera name="track" mode="trackcom" pos="0 -3 1" xyaxes="1 0 0 0 0 1"/>
       <joint armature="0" axis="1 0 0" damping="0" limited="false" name="rootx" pos="0 0 0" stiffness="0" type="slide"/>
       <joint armature="0" axis="0 0 1" damping="0" limited="false" name="rootz" pos="0 0 0" ref="1.25" stiffness="0" type="slide"/>
       <joint armature="0" axis="0 1 0" damping="0" limited="false" name="rooty" pos="0 0 1.25" stiffness="0" type="hinge"/>
@@ -83,19 +84,19 @@
         </body>
       </body>
     </body>
-    </worldbody>
-    <actuator>
-        <motor ctrllimited="true" ctrlrange="-1.0 1.0" gear="100" joint="thighjoint_1"/>
-        <motor ctrllimited="true" ctrlrange="-1.0 1.0" gear="100" joint="legjoint_1"/>
-        <motor ctrllimited="true" ctrlrange="-1.0 1.0" gear="100" joint="footjoint_1"/>
-        <motor ctrllimited="true" ctrlrange="-1.0 1.0" gear="100" joint="thighjoint_2"/>
-        <motor ctrllimited="true" ctrlrange="-1.0 1.0" gear="100" joint="legjoint_2"/>
-        <motor ctrllimited="true" ctrlrange="-1.0 1.0" gear="100" joint="footjoint_2"/>
-        <motor ctrllimited="true" ctrlrange="-1.0 1.0" gear="100" joint="thighjoint_3"/>
-        <motor ctrllimited="true" ctrlrange="-1.0 1.0" gear="100" joint="legjoint_3"/>
-        <motor ctrllimited="true" ctrlrange="-1.0 1.0" gear="100" joint="footjoint_3"/>
-        <motor ctrllimited="true" ctrlrange="-1.0 1.0" gear="100" joint="thighjoint_4"/>
-        <motor ctrllimited="true" ctrlrange="-1.0 1.0" gear="100" joint="legjoint_4"/>
-        <motor ctrllimited="true" ctrlrange="-1.0 1.0" gear="100" joint="footjoint_4"/>
-    </actuator>
+  </worldbody>
+  <actuator>
+    <motor ctrllimited="true" ctrlrange="-1.0 1.0" gear="100" joint="thighjoint_1"/>
+    <motor ctrllimited="true" ctrlrange="-1.0 1.0" gear="100" joint="legjoint_1"/>
+    <motor ctrllimited="true" ctrlrange="-1.0 1.0" gear="100" joint="footjoint_1"/>
+    <motor ctrllimited="true" ctrlrange="-1.0 1.0" gear="100" joint="thighjoint_2"/>
+    <motor ctrllimited="true" ctrlrange="-1.0 1.0" gear="100" joint="legjoint_2"/>
+    <motor ctrllimited="true" ctrlrange="-1.0 1.0" gear="100" joint="footjoint_2"/>
+    <motor ctrllimited="true" ctrlrange="-1.0 1.0" gear="100" joint="thighjoint_3"/>
+    <motor ctrllimited="true" ctrlrange="-1.0 1.0" gear="100" joint="legjoint_3"/>
+    <motor ctrllimited="true" ctrlrange="-1.0 1.0" gear="100" joint="footjoint_3"/>
+    <motor ctrllimited="true" ctrlrange="-1.0 1.0" gear="100" joint="thighjoint_4"/>
+    <motor ctrllimited="true" ctrlrange="-1.0 1.0" gear="100" joint="legjoint_4"/>
+    <motor ctrllimited="true" ctrlrange="-1.0 1.0" gear="100" joint="footjoint_4"/>
+  </actuator>
 </mujoco>

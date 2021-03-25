@@ -3,7 +3,7 @@
   <option collision="predefined" density="4000" integrator="RK4" timestep="0.01" viscosity="0.1"/>
   <default>
     <geom conaffinity="1" condim="1" contype="1" material="geom" rgba="0.8 0.6 .4 1"/>
-    <joint armature='0.1'/>
+    <joint armature="0.1"/>
   </default>
   <asset>
     <texture builtin="gradient" height="100" rgb1="1 1 1" rgb2="0 0 0" type="skybox" width="100"/>
@@ -17,47 +17,48 @@
     <light cutoff="100" diffuse="1 1 1" dir="-0 0 -1.3" directional="true" exponent="1" pos="0 0 1.3" specular=".1 .1 .1"/>
     <geom conaffinity="1" condim="3" material="MatPlane" name="floor" pos="0 0 -0.1" rgba="0.8 0.9 0.8 1" size="40 40 0.1" type="plane"/>
     <body name="podBody_1" pos="0 0 0">
-      <geom name='pod_1' density="1000" fromto="0 0 0 -1 0 0" size="0.1" type="capsule"/>
+      <camera name="track" mode="trackcom" pos="-4.6 -10 10" xyaxes="1 0 0 0 1 1"/>
+      <geom name="pod_1" density="1000" fromto="0 0 0 -1 0 0" size="0.1" type="capsule"/>
       <joint axis="1 0 0" name="slider1" pos="0 0 0" type="slide"/>
       <joint axis="0 1 0" name="slider2" pos="0 0 0" type="slide"/>
       <joint axis="0 0 1" name="rot_1" pos="-1.5 0 0" type="hinge"/>
       <site name="tip" pos="0 0 0" size="0.02 0.02"/>
       <body name="podBody_2" pos="-1 0 0">
-        <geom name='pod_2' density="1000" fromto="0 0 0 -1 0 0" size="0.1" type="capsule"/>
+        <geom name="pod_2" density="1000" fromto="0 0 0 -1 0 0" size="0.1" type="capsule"/>
         <joint axis="0 0 1" limited="true" name="rot_2" pos="0 0 0" range="-100 100" type="hinge"/>
 
         <body name="podBody_3" pos="-1 0 0">
-          <geom name='pod_3' density="1000" fromto="0 0 0 -1 0 0" size="0.1" type="capsule"/>
+          <geom name="pod_3" density="1000" fromto="0 0 0 -1 0 0" size="0.1" type="capsule"/>
           <joint axis="0 0 1" limited="true" name="rot_3" pos="0 0 0" range="-100 100" type="hinge"/>
 
 
           <body name="podBody_4" pos="-1 0 0">
-            <geom name='pod_4' density="1000" fromto="0 0 0 -1 0 0" size="0.1" type="capsule"/>
+            <geom name="pod_4" density="1000" fromto="0 0 0 -1 0 0" size="0.1" type="capsule"/>
             <joint axis="0 0 1" limited="true" name="rot_4" pos="0 0 0" range="-100 100" type="hinge"/>
 
 
             <body name="podBody_5" pos="-1 0 0">
-              <geom name='pod_5' density="1000" fromto="0 0 0 -1 0 0" size="0.1" type="capsule"/>
+              <geom name="pod_5" density="1000" fromto="0 0 0 -1 0 0" size="0.1" type="capsule"/>
               <joint axis="0 0 1" limited="true" name="rot_5" pos="0 0 0" range="-100 100" type="hinge"/>
 
 
               <body name="podBody_6" pos="-1 0 0">
-                <geom name='pod_6' density="1000" fromto="0 0 0 -1 0 0" size="0.1" type="capsule"/>
+                <geom name="pod_6" density="1000" fromto="0 0 0 -1 0 0" size="0.1" type="capsule"/>
                 <joint axis="0 0 1" limited="true" name="rot_6" pos="0 0 0" range="-100 100" type="hinge"/>
 
 
                 <body name="podBody_7" pos="-1 0 0">
-                  <geom name='pod_7' density="1000" fromto="0 0 0 -1 0 0" size="0.1" type="capsule"/>
+                  <geom name="pod_7" density="1000" fromto="0 0 0 -1 0 0" size="0.1" type="capsule"/>
                   <joint axis="0 0 1" limited="true" name="rot_7" pos="0 0 0" range="-100 100" type="hinge"/>
 
 
                   <body name="podBody_8" pos="-1 0 0">
-                    <geom name='pod_8' density="1000" fromto="0 0 0 -1 0 0" size="0.1" type="capsule"/>
+                    <geom name="pod_8" density="1000" fromto="0 0 0 -1 0 0" size="0.1" type="capsule"/>
                     <joint axis="0 0 1" limited="true" name="rot_8" pos="0 0 0" range="-100 100" type="hinge"/>
 
 
                     <body name="podBody_9" pos="-1 0 0">
-                      <geom name='pod_9' density="1000" fromto="0 0 0 -1 0 0" size="0.1" type="capsule"/>
+                      <geom name="pod_9" density="1000" fromto="0 0 0 -1 0 0" size="0.1" type="capsule"/>
                       <joint axis="0 0 1" limited="true" name="rot_9" pos="0 0 0" range="-100 100" type="hinge"/>
 
                     </body>

@@ -13,6 +13,7 @@
 
 
     <body name="torso" pos="0 0 1.25">
+      <camera name="track" mode="trackcom" pos="0 -3 1" xyaxes="1 0 0 0 0 1"/>
       <joint armature="0" axis="1 0 0" damping="0" limited="false" name="rootx" pos="0 0 0" stiffness="0" type="slide"/>
       <joint armature="0" axis="0 0 1" damping="0" limited="false" name="rootz" pos="0 0 0" ref="1.25" stiffness="0" type="slide"/>
       <joint armature="0" axis="0 1 0" damping="0" limited="false" name="rooty" pos="0 0 1.25" stiffness="0" type="hinge"/>
@@ -31,18 +32,18 @@
         </body>
       </body>
     </body>
-    </worldbody>
-    <actuator>
-        <motor ctrllimited="true" ctrlrange="-1.0 1.0" gear="200.0" joint="thighjoint_1"/>
-        <motor ctrllimited="true" ctrlrange="-1.0 1.0" gear="200.0" joint="legjoint_1"/>
-        <motor ctrllimited="true" ctrlrange="-1.0 1.0" gear="200.0" joint="footjoint_1"/>
-    </actuator>
-    <asset>
-        <texture type="skybox" builtin="gradient" rgb1=".4 .5 .6" rgb2="0 0 0"
-                 width="100" height="100"/>
-      <texture builtin="flat" height="1278" mark="cross" markrgb="1 1 1" name="texgeom" random="0.01" rgb1="0.8 0.6 0.4" rgb2="0.8 0.6 0.4" type="cube" width="127"/>
-        <texture builtin="checker" height="100" name="texplane" rgb1="0 0 0" rgb2="0.8 0.8 0.8" type="2d" width="100"/>
-        <material name="MatPlane" reflectance="0.5" shininess="1" specular="1" texrepeat="60 60" texture="texplane"/>
-        <material name="geom" texture="texgeom" texuniform="true"/>
-    </asset>
+  </worldbody>
+  <actuator>
+    <motor ctrllimited="true" ctrlrange="-1.0 1.0" gear="200.0" joint="thighjoint_1"/>
+    <motor ctrllimited="true" ctrlrange="-1.0 1.0" gear="200.0" joint="legjoint_1"/>
+    <motor ctrllimited="true" ctrlrange="-1.0 1.0" gear="200.0" joint="footjoint_1"/>
+  </actuator>
+  <asset>
+    <texture type="skybox" builtin="gradient" rgb1=".4 .5 .6" rgb2="0 0 0"
+             width="100" height="100"/>
+    <texture builtin="flat" height="1278" mark="cross" markrgb="1 1 1" name="texgeom" random="0.01" rgb1="0.8 0.6 0.4" rgb2="0.8 0.6 0.4" type="cube" width="127"/>
+    <texture builtin="checker" height="100" name="texplane" rgb1="0 0 0" rgb2="0.8 0.8 0.8" type="2d" width="100"/>
+    <material name="MatPlane" reflectance="0.5" shininess="1" specular="1" texrepeat="60 60" texture="texplane"/>
+    <material name="geom" texture="texgeom" texuniform="true"/>
+  </asset>
 </mujoco>

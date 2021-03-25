@@ -12,19 +12,20 @@
 
 
     <body name="torso" pos="0 0 1.25">
+      <camera name="track" mode="trackcom" pos="0 -3 1" xyaxes="1 0 0 0 0 1"/>
       <joint armature="0" axis="1 0 0" damping="0" limited="false" name="rootx" pos="0 0 0" stiffness="0" type="slide"/>
       <joint armature="0" axis="0 0 1" damping="0" limited="false" name="rootz" pos="0 0 0" ref="1.25" stiffness="0" type="slide"/>
       <joint armature="0" axis="0 1 0" damping="0" limited="false" name="rooty" pos="0 0 1.25" stiffness="0" type="hinge"/>
-      <geom friction="0.9" fromto="-0.2 0 1.0 0.1 0 1.1" name="torso_geom" size="0.05" type="capsule" density='300'/>
+      <geom friction="0.9" fromto="-0.2 0 1.0 0.1 0 1.1" name="torso_geom" size="0.05" type="capsule" density="300"/>
 
       <body name="tail" pos="-0.2 0 1.0">
         <joint axis="0 -1 0" name="tailjoint" pos="-0.2 0 1.0" range="-50 50" type="hinge"/>
-        <geom friction="0.9" fromto="-0.2 0 1.0 -0.5 0 1.0" name="tailgeom" size="0.05" type="capsule" density='500'/>
+        <geom friction="0.9" fromto="-0.2 0 1.0 -0.5 0 1.0" name="tailgeom" size="0.05" type="capsule" density="500"/>
       </body>
       <body name="headbody" pos="0.1 0 1.1">
         <joint axis="0 -1 0" name="neckjoint" pos="0.1 0 1.1" range="-50 50" type="hinge"/>
-        <geom friction="0.9" fromto="0.1 0 1.1 0.2 0 1.55" name="neck" size="0.05" type="capsule" density='200'/>
-        <geom friction="0.9" fromto="0.2 0 1.55 0.3 0 1.45" name="head" size="0.05" type="capsule" density='200'/>
+        <geom friction="0.9" fromto="0.1 0 1.1 0.2 0 1.55" name="neck" size="0.05" type="capsule" density="200"/>
+        <geom friction="0.9" fromto="0.2 0 1.55 0.3 0 1.45" name="head" size="0.05" type="capsule" density="200"/>
         <site name="head" pos="0.2 0 1.55" size="0.08 0.08" rgba="0.8 0.6 .4 1"/>
       </body>
 
