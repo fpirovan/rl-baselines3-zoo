@@ -2,11 +2,8 @@
 
 proj_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" &>/dev/null && pwd)"
 
-env_ids=$(python str_train_many.py --env_ids "$@")
-
 export PYTHONPATH="${PYTHONPATH}:${proj_dir}"
-cd "$proj_dir"
+cmd=$(python train_many_str.py --seed 1085 "$@")
 
-for env_id in $env_ids; do
-  python train.py --seed 1085 --env "$env_id"
-done
+cd "$proj_dir"
+eval "$cmd"
