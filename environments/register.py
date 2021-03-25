@@ -52,19 +52,10 @@ def register_all_envs():
     )
     new_env_ids.append(env_id)
 
-    env_id = "WalkersHalfCheetah-v1"
+    env_id = "WalkersHorse-v1"
     register(
         id=env_id,
-        entry_point="environments.walkers:WalkersHalfCheetahEnv",
-        max_episode_steps=MAX_EPISODE_STEPS,
-        reward_threshold=THRESHOLDS["walkers"],
-    )
-    new_env_ids.append(env_id)
-
-    env_id = "WalkersFullCheetah-v1"
-    register(
-        id=env_id,
-        entry_point="environments.walkers:WalkersFullCheetahEnv",
+        entry_point="environments.walkers:WalkersHorseEnv",
         max_episode_steps=MAX_EPISODE_STEPS,
         reward_threshold=THRESHOLDS["walkers"],
     )
