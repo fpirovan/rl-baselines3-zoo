@@ -7,6 +7,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     cmd = ""
+
     for env_id in args.env_ids:
         cmd += f'python train.py --seed {args.seed} --env {env_id}\n'
 
