@@ -2,6 +2,11 @@ import num2words
 import numpy as np
 from gym.envs.registration import register
 
+try:
+    import pybullet_envs
+except ImportError:
+    raise ImportError("Cannot import PyBullet")
+
 MAX_EPISODE_STEPS = 1000
 TASKS = {
     "Centipede": [3, 5, 7] + [4, 6, 8, 10, 12] + [20, 40],
