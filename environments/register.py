@@ -5,7 +5,7 @@ from gym.envs.registration import register
 try:
     import pybullet_envs
 except ImportError:
-    raise ImportError("Cannot import PyBullet")
+    raise ImportError("Cannot import pybullet_envs")
 
 MAX_EPISODE_STEPS = 1000
 TASKS = {
