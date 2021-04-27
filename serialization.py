@@ -141,7 +141,7 @@ def save_to_zip_file(save_path, data=None, params=None, pytorch_variables=None, 
             archive.writestr("data", serialized_data)
         if pytorch_variables is not None:
             with archive.open("pytorch_variables.pth", mode="w") as pytorch_variables_file:
-                torch.save(pytorch_variables, pytorch_variables_file)
+                torch.save(pytorch_variables, pytorch_variables_file, _use_new_zipfile_serialization=False)
         if params is not None:
             for file_name, dict_ in params.items():
                 with archive.open(file_name + ".pth", mode="w") as param_file:
