@@ -9,7 +9,7 @@ except ImportError:
 
 MAX_EPISODE_STEPS = 1000
 TASKS = {
-    "Centipede": [3, 5, 7] + [4, 6, 8, 10, 12] + [20, 40],
+    "Centipede": [3, 5, 7] + [4, 6, 8, 10, 12] + [20],
     "CpCentipede": [4, 6, 8, 10, 12],
     "XSnake": range(3, 10),
     "YSnake": range(3, 10)

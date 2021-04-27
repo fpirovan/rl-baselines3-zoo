@@ -152,11 +152,6 @@ class CentipedeTwentyEnv(CentipedeEnv):
         CentipedeEnv.__init__(self, num_legs=20)
 
 
-class CentipedeFortyEnv(CentipedeEnv):
-    def __init__(self):
-        CentipedeEnv.__init__(self, num_legs=40)
-
-
 class CentipedeThreeEnv(CentipedeEnv):
     def __init__(self):
         CentipedeEnv.__init__(self, num_legs=3)
