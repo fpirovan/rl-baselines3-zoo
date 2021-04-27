@@ -49,7 +49,7 @@ class WalkersOstrichEnv(mujoco_env.MujocoEnv, utils.EzPickle):
         self.viewer.cam.elevation = -20
 
 
-class WalkersHorse(mujoco_env.MujocoEnv, utils.EzPickle):
+class WalkersHorseEnv(mujoco_env.MujocoEnv, utils.EzPickle):
     def __init__(self):
         xml_path = pjoin(BASE_DIR, "environments", "assets", "WalkersHorse.xml")
 
